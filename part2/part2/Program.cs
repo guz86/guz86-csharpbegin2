@@ -23,6 +23,23 @@ namespace part2
                 Console.WriteLine("Извините, мы вас не можем обслужить! Вы еще юны. ");
                 Console.WriteLine("Приходите к нам через "+ (18 - age) + " лет! Всего хорошего!");
             }
+
+            // Другой пример
+
+            string day;
+
+            Console.WriteLine("Введите день недели!");
+            day = Console.ReadLine();
+            if (day== "Понедельник")
+            {
+                Console.WriteLine("Изучаем курсы!");
+            }
+            else if (day == "Вторник")
+            {
+                Console.WriteLine("Проходим домашнее задание!");
+            }
+
+
            
         }
     }
