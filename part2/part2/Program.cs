@@ -90,6 +90,7 @@ namespace part2
 
             // switch когда в условии больше 2х вариантов
 
+            /*
             string day;
             Console.Write("Выберете день недели: ");
             day = Console.ReadLine();
@@ -119,11 +120,30 @@ namespace part2
                 default:
                     Console.WriteLine("Я не знаю такой день недели");
                     break;
+            }
+            */
 
+            // проверка пароля
+            string password = "sp001";
+            string userInput;
+
+            Console.Write("Введите пароль: ");
+            userInput = Console.ReadLine();
+
+            if (userInput == password)
+            {
+                Console.WriteLine("Вы вошли в программу!");
+
+            }
+            else
+            {
+                Console.WriteLine("Доступ запрещен");
             }
 
 
 
+
         }
+
     }
 }
