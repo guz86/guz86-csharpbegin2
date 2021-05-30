@@ -124,6 +124,7 @@ namespace part2
             */
 
             // проверка пароля
+            /*
             string password = "sp001";
             string userInput;
 
@@ -139,8 +140,58 @@ namespace part2
             {
                 Console.WriteLine("Доступ запрещен");
             }
+            */
 
+            // конвертер валют
 
+            int rubToUsd = 65, usdToRub = 67;
+            float rub;
+            float usd;
+            string userInput;
+            float currencyCount;
+
+            Console.Write("Сколько у вас рублей? ");
+            rub = Convert.ToSingle( Console.ReadLine());
+
+            Console.Write("Сколько у вас долларов? ");
+            usd = Convert.ToSingle(Console.ReadLine());
+
+            Console.Write("Здравствуйте, введите 1 если хотите обменять" +
+                " рубли на доллары, или 2 если хотите обменять доллары на рубли: ");
+            userInput = Console.ReadLine();
+
+            switch (userInput)
+            {
+                case "1":
+                    Console.Write("Обмен рублей на доллары. Сколько вы хотите обменять? ");
+                    currencyCount = Convert.ToSingle( Console.ReadLine());
+                    if (rub >= currencyCount)
+                    {
+                        rub -= currencyCount;
+                        usd += currencyCount / rubToUsd;
+                    }
+                    else {
+                        Console.WriteLine("У вас не достаточно рублей.");
+                            }
+
+                    break;
+                case "2": 
+                    Console.Write("Обмен долларов на рубли. Сколько вы хотите обменять? ");
+                    currencyCount = Convert.ToSingle(Console.ReadLine());  
+                    if (usd>=currencyCount)
+                    {
+                        usd -= currencyCount;
+                        rub += currencyCount * usdToRub;
+                    }
+                    else
+                    {
+                        Console.WriteLine("У вас не достаточно долларов.");
+                    }
+
+                    break;
+            }
+
+            Console.WriteLine("Ваш баланс, Доллары: "+ usd+ " и Рубли: "+rub);
 
 
         }
