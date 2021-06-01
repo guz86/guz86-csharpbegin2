@@ -143,7 +143,7 @@ namespace part2
             */
 
             // конвертер валют
-
+            /*
             int rubToUsd = 65, usdToRub = 67;
             float rub;
             float usd;
@@ -192,6 +192,43 @@ namespace part2
             }
 
             Console.WriteLine("Ваш баланс, Доллары: "+ usd+ " и Рубли: "+rub);
+
+            */
+            // Циклы
+
+            int age = 10;
+            // выполняется пока верно условие
+            /*
+             * while (age > 0) {
+                Console.WriteLine("С днем рождения");
+                // уменьшаем на 1  постфиксный оператор декремента (x--) и префиксный оператор декремента (--x).
+
+                Console.WriteLine(age);
+                age--;
+            }
+            */
+            // декремент в условии
+            while (age-- > 0)
+            {
+                // Console.WriteLine(age);
+                // Console.WriteLine("С днем рождения!");
+                // преравать цикл в соотвествии с условием
+                if (age == 5)
+                {
+                    break;
+                }
+                // пропустить одно выполнение цикла -итерацию и идти дальше
+                if (age == 7)
+                {
+                    continue;
+                }
+                Console.WriteLine(age);
+                // Console.WriteLine("С днем рождения!");
+            }
+
+
+
+
 
 
         }
