@@ -194,12 +194,15 @@ namespace part2
             Console.WriteLine("Ваш баланс, Доллары: "+ usd+ " и Рубли: "+rub);
 
             */
+
             // Циклы
 
+            /*
+            
             int age = 10;
             // выполняется пока верно условие
-            /*
-             * while (age > 0) {
+            
+              while (age > 0) {
                 Console.WriteLine("С днем рождения");
                 // уменьшаем на 1  постфиксный оператор декремента (x--) и префиксный оператор декремента (--x).
 
@@ -207,7 +210,12 @@ namespace part2
                 age--;
             }
             */
+
+
             // декремент в условии
+
+
+            /*
             while (age-- > 0)
             {
                 // Console.WriteLine(age);
@@ -226,8 +234,40 @@ namespace part2
                 // Console.WriteLine("С днем рождения!");
             }
 
+            */
 
+            /*
 
+            int testDig = 100;
+            while ((testDig = testDig-5) > 0)
+            {
+                if (testDig == 40)
+                {
+                    Console.WriteLine("Противник зашел с другой стороны, теряя здоровье");
+                    continue;
+
+                }
+                if ((testDig % 10) == 0)
+                {
+                    Console.WriteLine("Пиу - не попали " + testDig);
+
+                }
+                else
+                {
+
+                    Console.WriteLine("Пиу - попали - " + testDig);
+                }
+               
+                if (testDig == 10)
+                {
+                    Console.WriteLine("Противник убегает");
+                    break;
+                }
+            }
+            */
+            
+            
+           
 
 
 
