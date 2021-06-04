@@ -270,12 +270,37 @@ namespace part2
 
             // for цикл с параметром если есть четкий шаг и границы цикла
             // каждое четное от 0 до 10
+            /*
             int age = 10;
             for (int i = 0; i<=age; i+=2)
             {
                 Console.WriteLine(i);
             }
+            */
 
+
+            int tryCount = 5;
+            string password = "123456";
+            string userInput;
+
+            for (int i = 0; i < tryCount; i++)
+            {
+                Console.Write("Введите пароль:");
+                userInput = Console.ReadLine();
+                if (userInput == password)
+                {
+                    Console.WriteLine("Доступ открыт");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Ошибка, у Вас осталось - " + (tryCount - i - 1) + " попыток ввода");
+                }
+                if ((tryCount - i - 1) == 0)
+                {
+                    Console.WriteLine("Доступ закрыт, у вас больше нет возможности вводить пароль");
+                }
+            }
 
 
         }
