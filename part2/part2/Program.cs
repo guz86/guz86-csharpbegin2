@@ -278,7 +278,7 @@ namespace part2
             }
             */
 
-
+            /*
             int tryCount = 5;
             string password = "123456";
             string userInput;
@@ -301,6 +301,30 @@ namespace part2
                     Console.WriteLine("Доступ закрыт, у вас больше нет возможности вводить пароль");
                 }
             }
+            */
+
+            // проценты на вклад в банке
+
+            float money;
+            int years;
+            int percent;
+
+            Console.Write("Введите сколько денег вы хотите внести: ");
+            money = Convert.ToSingle(Console.ReadLine());
+            Console.Write("Введите количество лет для вклада: ");
+            years = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Под какой процент: ");
+            percent = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 0; i < years; i++)
+            {
+                money += money / 100 * percent;
+                Console.WriteLine("За "+ (i+1) + " год, вы заработаете "+ money);
+                Console.ReadKey();
+            }
+
+            Console.WriteLine("Через "+ years+ " лет у Вас накопиться "+ money+ " денежных средств.");
+
 
 
         }
