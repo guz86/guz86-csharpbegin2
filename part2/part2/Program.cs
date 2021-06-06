@@ -304,7 +304,7 @@ namespace part2
             */
 
             // проценты на вклад в банке
-
+            /*
             float money;
             int years;
             int percent;
@@ -324,6 +324,35 @@ namespace part2
             }
 
             Console.WriteLine("Через "+ years+ " лет у Вас накопиться "+ money+ " денежных средств.");
+            */
+
+            // бой с противником
+
+            int health = 1000;
+            int damage = 6;
+            int enemyHealth = 500;
+            int enemyDamage = 12;
+
+            while (health > 0 && enemyHealth > 0)
+            {
+                health -= enemyDamage;
+                enemyHealth -= damage;
+                Console.WriteLine("Герой - " + health + ", Враг - " + enemyHealth);
+
+            }
+            if (health <= 0 && enemyHealth <= 0)
+            {
+                Console.WriteLine("Ничья");
+
+            }
+            else if (health <= 0)
+            {
+                Console.WriteLine("Враг победил");
+            }
+            else if (enemyHealth <= 0)
+            {
+                Console.WriteLine("Герой победил");
+            }
 
 
 
