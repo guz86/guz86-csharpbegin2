@@ -375,6 +375,7 @@ namespace part2
 
             // ошибка использования random в цикле
 
+            /*
             Random rand = new Random();
 
             for (int i = 0; i < 5; i++)
@@ -383,9 +384,75 @@ namespace part2
                 // Random rand = new Random();
                 Console.WriteLine(rand.Next(0, 50));
             }
+            */
+
+            // угадай число
+
+            int number, lower, larger, userInput;
+            int tryCount = 5;
+
+            Random rand = new Random();
+            number = rand.Next(0, 101);
+            lower = rand.Next(number - 10, number);
+            larger = rand.Next(number + 1, number + 10);
 
 
 
+            Console.WriteLine("Мы загадали число от 0 до 100, оно больше " + lower + " но меньше " + larger);
+
+            /*
+            for (int i = 0; i < tryCount; i++)
+            {
+
+                Console.Write("Какое это число? ");
+
+                userInput = Convert.ToInt32(Console.ReadLine());
+
+                if (userInput == number )
+                {
+                    Console.WriteLine("Вы угадали!");
+                    break;
+                }
+                if (i < 4)
+                {
+                    Console.WriteLine("Вы не угадали! У вас осталось "+ (4 - i) +" попыток");
+                }
+                else
+                {
+                    Console.WriteLine("Вы не угадали, мы загадали число " + number);
+                }
+
+            }
+            */
+
+            // с урока через while
+
+            // начало уменьшение потом сравнение, поэтому в конце уходит в -1
+
+            while (tryCount-- > 0)
+            {
+                Console.Write("Какое это число? ");
+
+                userInput = Convert.ToInt32(Console.ReadLine());
+
+                if (userInput == number)
+                {
+                    Console.WriteLine("Вы угадали!");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Вы не угадали! У вас осталось " + (tryCount) + " попытки");
+                }
+                
+            }
+
+            if (tryCount < 0)
+            
+                {
+                    Console.WriteLine("Мы загадали число " + number);
+                }
+            
 
         }
 
