@@ -358,7 +358,7 @@ namespace part2
 
 
             // random
-            
+
             /*
             Random rand = new Random();
             // 10 не включается последняя цифра
@@ -373,6 +373,16 @@ namespace part2
             }
             */
 
+            // ошибка использования random в цикле
+
+            Random rand = new Random();
+
+            for (int i = 0; i < 5; i++)
+            {
+                // внутри цикла будут генерироваться в большинстве одни и те же числа, нужно выносить вне цикла
+                // Random rand = new Random();
+                Console.WriteLine(rand.Next(0, 50));
+            }
 
 
 
