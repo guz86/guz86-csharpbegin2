@@ -327,11 +327,11 @@ namespace part2
             */
 
             // бой с противником
-
+            /*
             int health = 1000;
-            int damage = 6;
+            int damage = 7;
             int enemyHealth = 500;
-            int enemyDamage = 12;
+            int enemyDamage = 14;
 
             while (health > 0 && enemyHealth > 0)
             {
@@ -353,6 +353,27 @@ namespace part2
             {
                 Console.WriteLine("Герой победил");
             }
+
+            */
+
+
+            // random
+            
+            /*
+            Random rand = new Random();
+            // 10 не включается последняя цифра
+            int i;
+
+            while (true)
+            { 
+                // от 0 до 10
+                i = rand.Next(0, 10);
+                Console.WriteLine(i);
+                Console.ReadKey();    
+            }
+            */
+
+
 
 
 
