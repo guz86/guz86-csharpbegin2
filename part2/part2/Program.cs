@@ -388,6 +388,8 @@ namespace part2
 
             // угадай число
 
+            /*
+             
             int number, lower, larger, userInput;
             int tryCount = 5;
 
@@ -400,7 +402,7 @@ namespace part2
 
             Console.WriteLine("Мы загадали число от 0 до 100, оно больше " + lower + " но меньше " + larger);
 
-            /*
+            
             for (int i = 0; i < tryCount; i++)
             {
 
@@ -413,7 +415,7 @@ namespace part2
                     Console.WriteLine("Вы угадали!");
                     break;
                 }
-                if (i < 4)
+                else if (i < 4)
                 {
                     Console.WriteLine("Вы не угадали! У вас осталось "+ (4 - i) +" попыток");
                 }
@@ -422,6 +424,9 @@ namespace part2
                     Console.WriteLine("Вы не угадали, мы загадали число " + number);
                 }
 
+
+                
+
             }
             */
 
@@ -429,6 +434,7 @@ namespace part2
 
             // начало уменьшение потом сравнение, поэтому в конце уходит в -1
 
+            /*
             while (tryCount-- > 0)
             {
                 Console.Write("Какое это число? ");
@@ -453,6 +459,48 @@ namespace part2
                     Console.WriteLine("Мы загадали число " + number);
                 }
             
+            */
+
+            // gladiator game
+
+            Random rand = new Random();
+
+
+            float health1 = rand.Next(90, 110);
+            int damage1 = rand.Next(10, 15);
+            int armor1 = rand.Next(35, 45);
+            float health2 = rand.Next(70, 90);
+            int damage2 = rand.Next(10, 25);
+            int armor2 = rand.Next(25, 45);
+
+            Console.WriteLine("Гладиатор 1 - жизней - " + health1 + ", урон - " + damage1 + ", броня - " + armor1 + "%");
+            Console.WriteLine("Гладиатор 2 - жизней - " + health2 + ", урон - " + damage2 + ", броня - " + armor2 + "%");
+
+            while (health1 > 0 && health2 > 0)
+            {
+                
+                //конвертируем чтобы не было 0 результата при делении на 100
+                health1 -= Convert.ToSingle(rand.Next(0, damage2)) / 100 * armor1;
+                health2 -= Convert.ToSingle(rand.Next(0, damage1)) / 100 * armor2;
+
+                Console.WriteLine("Гладиатор 1 - " + health1 + " жизней" + ", Гладиатор 2 - " + health2 + " жизней.");
+
+            }
+
+            if (health1 <= 0 && health2 <= 0)
+            {
+                Console.WriteLine("Оба Гладиатора пали...");
+            }
+            else if (health1 <= 0)
+            {
+                Console.WriteLine("Победил Гладиатор 2");
+            }
+            else if (health2 <= 0)
+            {
+                Console.WriteLine("Победил Гладиатор 1");
+
+            }
+
 
         }
 
