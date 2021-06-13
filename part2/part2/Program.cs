@@ -465,7 +465,7 @@ namespace part2
 
             Random rand = new Random();
 
-
+            decimal health1Decimal, health2Decimal; ;
             float health1 = rand.Next(90, 110);
             int damage1 = rand.Next(10, 15);
             int armor1 = rand.Next(35, 45);
@@ -473,23 +473,27 @@ namespace part2
             int damage2 = rand.Next(10, 25);
             int armor2 = rand.Next(25, 45);
 
-            Console.WriteLine("Гладиатор 1 - жизней - " + health1 + ", урон - " + damage1 + ", броня - " + armor1 + "%");
-            Console.WriteLine("Гладиатор 2 - жизней - " + health2 + ", урон - " + damage2 + ", броня - " + armor2 + "%");
+            Console.WriteLine("Гладиатор 1 - HP - " + health1 + ", урон - " + damage1 + ", броня - " + armor1 + "%");
+            Console.WriteLine("Гладиатор 2 - HP - " + health2 + ", урон - " + damage2 + ", броня - " + armor2 + "%");
 
             while (health1 > 0 && health2 > 0)
             {
                 
-                //конвертируем чтобы не было 0 результата при делении на 100
+                // конвертируем чтобы не было 0 результата при делении на 100
                 health1 -= Convert.ToSingle(rand.Next(0, damage2)) / 100 * armor1;
                 health2 -= Convert.ToSingle(rand.Next(0, damage1)) / 100 * armor2;
 
-                Console.WriteLine("Гладиатор 1 - " + health1 + " жизней" + ", Гладиатор 2 - " + health2 + " жизней.");
+                // вывод в десятичной красивой форме https://stackoverflow.com/questions/20968638/how-to-round-a-float-value-in-c
+                health1Decimal = Math.Round((decimal)health1);
+                health2Decimal = Math.Round((decimal)health2);
+
+                Console.WriteLine("Гладиатор 1 - " + health1Decimal + " HP" + ", Гладиатор 2 - " + health2Decimal + " HP.");
 
             }
 
             if (health1 <= 0 && health2 <= 0)
             {
-                Console.WriteLine("Оба Гладиатора пали...");
+                Console.WriteLine("Разменялись...");
             }
             else if (health1 <= 0)
             {
