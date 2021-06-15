@@ -463,6 +463,7 @@ namespace part2
 
             // gladiator game
 
+            /*
             Random rand = new Random();
 
             decimal health1Decimal, health2Decimal; ;
@@ -504,6 +505,23 @@ namespace part2
                 Console.WriteLine("Победил Гладиатор 1");
 
             }
+
+            */
+
+            // console
+            // cw tab+tab Console.WriteLine();
+
+            // \b Backspace  \n Новая строка \r Возврат каретки \t Горизонтальная табуляция \v Вертикальная табуляция \"
+
+            //  Console.WriteLine("Привет Максим!\b \nКуда ты вчера делся?\b \nЯ убежал к..\b \b");
+            // Console.Clear();
+            // Console.SetCursorPosition(11, 22);
+            // Console.ForegroundColor = ConsoleColor.Blue;
+            // Console.BackgroundColor = ConsoleColor.Gray;
+            // Console.Clear();
+            // Console.SetCursorPosition(5, 1);
+            // Console.WindowWidth = 50;
+            // Console.WindowHeight = 30;
 
 
         }
