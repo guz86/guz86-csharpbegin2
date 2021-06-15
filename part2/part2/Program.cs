@@ -548,7 +548,7 @@ namespace part2
             // Помните, в цикле должно быть условие, которое отвечает за то, когда цикл должен завершиться.
             // Это нужно, чтобы любой разработчик взглянув на ваш код, понял четкие границы вашего цикла.
             // SimpleExit
-
+            /*
             string message;
 
             Console.WriteLine("Запуск программы....");
@@ -569,10 +569,158 @@ namespace part2
                 }
 
             }
+            */
+
+            // Конвертер валют Currency Converter
+            // Написать конвертер валют (3 валюты).
+            // У пользователя есть баланс в каждой из представленных валют.
+            // Он может попросить сконвертировать часть баланса с одной валюты в другую.
+            // Тогда у него с баланса одной валюты снимется X и зачислится на баланс другой Y.
+            // Курс конвертации должен быть просто прописан в программе.
+            // Программа должна завершиться тогда, когда это решит пользователь.
+
+            float userRub;
+            float userUsd;
+            float userEur;
+            string convertCur;
+            string convertCurNeed;
+            float curRubUsd = 75.25f;
+            float curRubEur = 85.34f;
+            float curUsdRub = 73.44f;
+            float curUsdEur = 1.3f;
+            float curEurUsd = 1.2f;
+            float curEurRub = 82.12f;
+            int countCur;
+            string choice;
+
+            Console.Write("Введите сколько у вас RUB: ");
+            userRub = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Введите сколько у вас USD: ");
+            userUsd = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Введите сколько у вас EUR: ");
+            userEur = Convert.ToInt32(Console.ReadLine());
+
+            while (true)
+            {
+                Console.WriteLine("У Вас на руках: RUB: "+userRub+", USD: "+userUsd+", EUR: "+userEur);
+            Console.WriteLine("Курсы валют на сегодня: \n RUB --> USD: " + curRubUsd + " \n USD --> RUB: " + curUsdRub + "\n RUB --> EUR: "+curRubEur+ "\n EUR --> RUB: "
+                + curEurRub+ "\n USD --> EUR: "+ curUsdEur+ "\n EUR --> USD: "+ curEurUsd);
+
+            Console.Write("Какую валюту вы хотите сконвертировать (RUB, USD, EUR): ");
+            convertCur = Console.ReadLine();
+
+            // После выбора валюты пользователю надо предоставить две другие валюты...
+
+            if (convertCur == "RUB")
+            {
+                Console.Write("Вы можете конвертировать RUB в USD или EUR, введите наименование валюты: ");
+                convertCurNeed = Console.ReadLine();
+                Console.Write("Сколько вы хотите конвертировать RUB: ");
+                countCur = Convert.ToInt32(Console.ReadLine());
+                if (countCur > userRub)
+                {
+                    Console.WriteLine("Указанное количество RUB - "+ countCur + " больше вашего баланса" + userRub +" , введите сумму меньше!");
+                    countCur = Convert.ToInt32(Console.ReadLine());
+
+                }
+
+
+                if (convertCurNeed == "USD")
+                {
+                    Console.WriteLine("Конвертируем "+ countCur + " RUB в USD по текущему курсу - " + curRubUsd);
+                    userRub -= countCur; 
+                    userUsd += countCur / curRubUsd;
+                }
+                if (convertCurNeed == "EUR")
+                {
+                    Console.WriteLine("Конвертируем " + countCur + " RUB в EUR по текущему курсу - " + curRubEur);
+                    userRub -= countCur;
+                    userEur += countCur / curRubEur;
+
+                }
+
+            }
+
+            // После выбора валюты пользователю надо предоставить две другие валюты...
+            if (convertCur == "USD")
+            {
+                Console.Write("Вы можете конвертировать USD в RUB или EUR, введите наименование валюты: ");
+                convertCurNeed = Console.ReadLine();
+                Console.Write("Сколько вы хотите конвертировать USD: ");
+                countCur = Convert.ToInt32(Console.ReadLine());
+
+                if (countCur > userUsd)
+                {
+                    Console.WriteLine("Указанное количество USD - " + countCur + " больше вашего баланса" + userUsd + " , введите сумму меньше!");
+                    countCur = Convert.ToInt32(Console.ReadLine());
+
+                }
+
+
+                if (convertCurNeed == "RUB")
+                {
+                    Console.WriteLine("Конвертируем " + countCur + " USD в RUB по текущему курсу - " + curUsdRub);
+                    userUsd -= countCur;
+                    userRub += countCur * curUsdRub;
+                }
+                if (convertCurNeed == "EUR")
+                {
+                    Console.WriteLine("Конвертируем " + countCur + " USD в EUR по текущему курсу - " + curUsdEur);
+                    userUsd -= countCur;
+                    userEur += countCur / curUsdEur;
+
+                }
+
+            }
+
+            // После выбора валюты пользователю надо предоставить две другие валюты...
+            if (convertCur == "EUR")
+            {
+                Console.Write("Вы можете конвертировать EUR в RUB или USD, введите наименование валюты: ");
+                convertCurNeed = Console.ReadLine();
+                Console.Write("Сколько вы хотите конвертировать EUR: ");
+                countCur = Convert.ToInt32(Console.ReadLine());
+
+                if (countCur > userEur)
+                {
+                    Console.WriteLine("Указанное количество EUR - " + countCur + " больше вашего баланса" + userEur + " , введите сумму меньше!");
+                    countCur = Convert.ToInt32(Console.ReadLine());
+
+                }
+
+
+                if (convertCurNeed == "RUB")
+                {
+                    Console.WriteLine("Конвертируем " + countCur + " EUR в RUB по текущему курсу - " + curEurRub);
+                    userEur -= countCur;
+                    userRub += countCur * curEurRub;
+                }
+                if (convertCurNeed == "USD")
+                {
+                    Console.WriteLine("Конвертируем " + countCur + " EUR в USD по текущему курсу - " + curEurUsd);
+                    userEur -= countCur;
+                    userUsd += countCur / curEurUsd;
+
+                }
+
+            } 
+
+                // Вывод
+                Console.WriteLine("У Вас " + userRub + " RUB, " + userUsd + " USD, " + userEur + " EUR.");
+
+
+                Console.Write("Вы хотите еще что то конвертировать? (Нажмите любую клавишу или напишите NO): ");
+                choice = Console.ReadLine();
+                if (choice == "NO")
+                {
+                    break;
+                }
 
 
 
-
+            }
 
         }
 
