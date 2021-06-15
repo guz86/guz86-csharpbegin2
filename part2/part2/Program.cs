@@ -524,6 +524,25 @@ namespace part2
             // Console.WindowHeight = 30;
 
 
+            // HomeWork
+            // освоение циклов
+            // Напишите простейшую программу, которая выводит указанное(установленное) пользователем сообщение заданное количество раз.
+            //  TextCount
+            string textUser;
+            int textCount;
+            Console.WriteLine("Введите сообщение:");
+            textUser = Console.ReadLine();
+            Console.Write("Напишите сколько раз выводить сообщение: ");
+            textCount = Convert.ToInt32(Console.ReadLine());
+
+            while (textCount > 0 ) 
+            {
+                Console.WriteLine(textUser);
+                textCount--;
+            }
+
+
+
         }
 
     }
