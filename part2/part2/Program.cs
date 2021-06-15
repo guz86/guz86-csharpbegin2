@@ -528,6 +528,7 @@ namespace part2
             // освоение циклов
             // Напишите простейшую программу, которая выводит указанное(установленное) пользователем сообщение заданное количество раз.
             //  TextCount
+            /*
             string textUser;
             int textCount;
             Console.WriteLine("Введите сообщение:");
@@ -540,6 +541,36 @@ namespace part2
                 Console.WriteLine(textUser);
                 textCount--;
             }
+
+            */
+
+            // Написать программу, которая будет выполняться до тех пор, пока не будет введено слово exit.
+            // Помните, в цикле должно быть условие, которое отвечает за то, когда цикл должен завершиться.
+            // Это нужно, чтобы любой разработчик взглянув на ваш код, понял четкие границы вашего цикла.
+            // SimpleExit
+
+            string message;
+
+            Console.WriteLine("Запуск программы....");
+
+            while (true)
+            {
+                Console.Write("Введите пароль для остановки программы:");
+                message = Console.ReadLine();
+                if (message == "exit")
+                {
+                    Console.WriteLine("Программа остановлена!");
+                    commandStartProgramm = false;
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Не верная команда, программа выполняется!");
+                }
+
+            }
+
+
 
 
 
