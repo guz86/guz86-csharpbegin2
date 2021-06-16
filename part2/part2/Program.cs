@@ -594,17 +594,17 @@ namespace part2
             string choice;
 
             Console.Write("Введите сколько у вас RUB: ");
-            userRub = Convert.ToInt32(Console.ReadLine());
+            userRub = Convert.ToSingle(Console.ReadLine());
 
             Console.Write("Введите сколько у вас USD: ");
-            userUsd = Convert.ToInt32(Console.ReadLine());
+            userUsd = Convert.ToSingle(Console.ReadLine());
 
             Console.Write("Введите сколько у вас EUR: ");
-            userEur = Convert.ToInt32(Console.ReadLine());
+            userEur = Convert.ToSingle(Console.ReadLine());
 
             while (true)
             {
-                Console.WriteLine("У Вас на руках: RUB: "+userRub+", USD: "+userUsd+", EUR: "+userEur);
+            Console.WriteLine("У Вас на руках: RUB: "+userRub+", USD: "+userUsd+", EUR: "+userEur);
             Console.WriteLine("Курсы валют на сегодня: \n RUB --> USD: " + curRubUsd + " \n USD --> RUB: " + curUsdRub + "\n RUB --> EUR: "+curRubEur+ "\n EUR --> RUB: "
                 + curEurRub+ "\n USD --> EUR: "+ curUsdEur+ "\n EUR --> USD: "+ curEurUsd);
 
