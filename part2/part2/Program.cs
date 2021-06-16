@@ -578,7 +578,7 @@ namespace part2
             // Тогда у него с баланса одной валюты снимется X и зачислится на баланс другой Y.
             // Курс конвертации должен быть просто прописан в программе.
             // Программа должна завершиться тогда, когда это решит пользователь.
-
+            /*
             float userRub;
             float userUsd;
             float userEur;
@@ -592,7 +592,8 @@ namespace part2
             float curEurRub = 82.12f;
             int countCur;
             string choice;
-
+            // ToSingle для float
+            // проблема с дробными числами, надо исключения какие то продумать...
             Console.Write("Введите сколько у вас RUB: ");
             userRub = Convert.ToSingle(Console.ReadLine());
 
@@ -669,7 +670,7 @@ namespace part2
                 {
                     Console.WriteLine("Конвертируем " + countCur + " USD в EUR по текущему курсу - " + curUsdEur);
                     userUsd -= countCur;
-                    userEur += countCur / curUsdEur;
+                    userEur += countCur * curUsdEur;
 
                 }
 
@@ -701,7 +702,7 @@ namespace part2
                 {
                     Console.WriteLine("Конвертируем " + countCur + " EUR в USD по текущему курсу - " + curEurUsd);
                     userEur -= countCur;
-                    userUsd += countCur / curEurUsd;
+                    userUsd += countCur  curEurUsd;
 
                 }
 
@@ -721,6 +722,170 @@ namespace part2
 
 
             }
+
+            */
+            // Конвертер валют Currency_Converter_ver2 через switch case
+
+            float userRub;
+            float userUsd;
+            float userEur;
+            string userChoiceСur;
+            string userChoiceCurConvert;
+            float userCurCount;
+            string toExit;
+
+            // курсы
+            float rubToUsd = 75;
+            float usdToRub = 73;
+
+            float rubToEur = 85;
+            float eurToRub = 83;
+
+            float usdToEur = 1.2f;
+            float eurToUsd = 1.1f;
+
+
+            Console.Write("Введите сколько у вас RUB: ");
+            userRub = Convert.ToSingle(Console.ReadLine());
+
+            Console.Write("Введите сколько у вас USD: ");
+            userUsd = Convert.ToSingle(Console.ReadLine());
+
+            Console.Write("Введите сколько у вас EUR: ");
+            userEur = Convert.ToSingle(Console.ReadLine());
+
+
+            while (true)
+            {
+                Console.WriteLine("\n\nКурсы на сегодня: \n RUB >> USD: " + rubToUsd 
+                    + "\n USD >> RUB: " + usdToRub
+                    + "\n RUB >> EUR: " + rubToEur
+                    + "\n EUR >> RUB: " + eurToRub
+                    + "\n USD >> EUR: " + usdToEur
+                    + "\n EUR >> USD: "+eurToUsd );
+
+                Console.Write("\nКакую валюту вы хотите обменять RUB (1), USD (2), EUR (3): ");
+                userChoiceСur = Console.ReadLine();
+
+                switch (userChoiceСur)
+                {
+                    // RUB
+                    case "1":
+                        Console.Write("\n\nНа какую валюту вы хотите поменять RUB? USD (1) или EUR (2): ");
+                        userChoiceCurConvert = Console.ReadLine();
+                        Console.Write("Сколько RUB вы хотите обменять: ");
+                        userCurCount = Convert.ToSingle(Console.ReadLine());
+
+                        if (userRub < userCurCount)
+                        {
+                            Console.WriteLine("У вас не достаточно RUB! Введите сумму меньше " + userRub);
+                            break;
+                        }
+
+                        switch (userChoiceCurConvert)
+                        {
+                            // RUB >> USD
+                            case "1":
+                                    userRub -= userCurCount;
+                                    userUsd += userCurCount / rubToUsd;
+                                break;
+                            // RUB >> EUR
+                            case "2":
+                                userRub -= userCurCount;
+                                userEur += userCurCount / rubToEur;
+                                break;
+
+                            default:
+                                Console.WriteLine("Вы не верно выбрали валюту для обмена!");
+                                break;
+                        }
+
+                        break;
+                    // USD
+                    case "2":
+                        Console.Write("\n\nНа какую валюту вы хотите поменять USD? RUB (1) или EUR (2): ");
+                        userChoiceCurConvert = Console.ReadLine();
+                        Console.Write("Сколько USD вы хотите обменять: ");
+                        userCurCount = Convert.ToSingle(Console.ReadLine());
+
+                        if (userUsd < userCurCount )
+                        {
+                            Console.WriteLine("У вас не достаточно USD! Введите сумму меньше "+ userUsd);
+                            break;
+                        }
+
+                        switch (userChoiceCurConvert)
+                        {
+                            // USD >> RUB
+                            case "1":
+                                userUsd -= userCurCount;
+                                userRub += userCurCount * usdToRub;
+                                break;
+                            // USD >> EUR
+                            case "2":
+                                userUsd -= userCurCount;
+                                userEur += userCurCount / usdToEur;
+                                break;
+
+                            default:
+                                Console.WriteLine("Вы не верно выбрали валюту для обмена!");
+                                break;
+                        }
+
+                        break;
+                    // EUR
+                    case "3":
+                        Console.Write("\n\nНа какую валюту вы хотите поменять EUR? RUB (1) или USD (2): ");
+                        userChoiceCurConvert = Console.ReadLine();
+                        Console.Write("Сколько EUR вы хотите обменять: ");
+                        userCurCount = Convert.ToSingle(Console.ReadLine());
+
+                        if (userEur < userCurCount)
+                        {
+                            Console.WriteLine("У вас не достаточно EUR! Введите сумму меньше " + userEur);
+                            break;
+                        }
+                        switch (userChoiceCurConvert)
+                        {
+                            // EUR >> RUB
+                            case "1":
+                                userEur -= userCurCount;
+                                userRub += userCurCount * eurToRub;
+                                break;
+                            // EUR >> USD
+                            case "2":
+                                userEur -= userCurCount;
+                                userUsd += userCurCount * eurToUsd;
+                                break;
+
+                            default:
+                                Console.WriteLine("Вы не верно выбрали валюту для обмена!");
+                                break;
+                        }
+
+
+                        break;
+                    default:
+                        Console.WriteLine("Вы ввели не верную валюту");
+
+                        break;
+
+                }
+
+                Console.WriteLine("\n\nПосле обмена у вас на руках RUB: " + userRub + ", USD: " + userUsd + ", EUR: " + userEur);
+
+                Console.Write("\n\nНажмите любую клавишу для продолжения!\n" +
+                    "Если желаете выйти, напишите 1: ");
+                toExit = Console.ReadLine();
+
+                if (toExit == "1")
+                {
+                    break;
+                }
+
+
+            }
+
 
         }
 
