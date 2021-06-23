@@ -1075,6 +1075,7 @@ namespace part2
 
 
             // console_ver1
+            /*
             int inputMenu;
             string name = "";
             string password = "";
@@ -1165,16 +1166,22 @@ namespace part2
                     break;
                 }
 
-
-
-
-
-
             }
 
+            */
 
+            // Последовательность
+            // Нужно написать программу(используя циклы, обязательно пояснить выбор вашего цикла),
+            // чтобы она выводила следующую последовательность 7 14 21 28 35 42 49 56 63 70 77 84 91 98
 
-
+            // есть четкие границы цикл for
+            int sequence = 0;
+            for (int i = 0; i < 14; i++)
+            {
+                sequence += 7;
+                // Console.WriteLine(sequence);
+                Console.Write(sequence + " ");
+            }
 
 
 
