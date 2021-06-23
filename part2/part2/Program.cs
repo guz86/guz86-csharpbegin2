@@ -1078,10 +1078,15 @@ namespace part2
             int inputMenu;
             string name = "";
             string password = "";
+            int windowSizeWidth;
+            int windowSizeHeight;
+
+            windowSizeWidth = 180;
+            windowSizeHeight = 30;
 
             while (true)
             {
-                Console.WriteLine(" | SetName (1) | ChangeConsoleColor (2) | | SetPassword (3) | WriteName (4) | Exit (10)");
+                Console.WriteLine("SetName(1)|ChangeConsoleColor(2)|SetPass(3)|WriteName(4)|WindowSize(5)|Title(6)|whatWinSize(7)|Beep(8)|RColor(9)|Exit(10)");
                 inputMenu = Convert.ToInt32(Console.ReadLine());
 
 
@@ -1111,12 +1116,44 @@ namespace part2
                         Console.Write("Введите пароль: ");
                         if (Console.ReadLine() == password)
                         {
-                            Console.WriteLine("Добро пожаловать, "+ name +" Нажмите любую клавишу");
+                            Console.WriteLine("Добро пожаловать, " + name + " Нажмите любую клавишу");
                             Console.ReadKey();
                         }
                         Console.Clear();
                         break;
+                    case 5:
+                        // Console.WindowWidth = 50;
+                        // Console.WindowHeight = 30;
+                        Console.Write("Введите ширину окна, например 120: ");
+                        windowSizeWidth = Convert.ToInt32(Console.ReadLine());
+                        Console.Write("Введите высоту окна, например 30: ");
+                        windowSizeHeight = Convert.ToInt32(Console.ReadLine());
+
+                        Console.Clear();
+                        Console.WindowWidth = windowSizeWidth;
+                        Console.WindowHeight = windowSizeHeight;
+                        break;
+                    case 6:
+                        Console.Write("Задайте название для окна: ");
+                        Console.Title = Console.ReadLine();
+                        Console.Clear();
+                        break;
+                    case 7:
+                        Console.WriteLine("Текущие размеры окна: "+Console.WindowHeight+ " на "+ Console.WindowWidth);
+                        Console.ReadKey();
+                        Console.Clear();
+                        break;
+                    case 8:
+                        Console.Beep();
+                        Console.ReadKey();
+                        Console.Clear();
+                        break;
+                    case 9:
+                        Console.ResetColor();
+                        Console.Clear();
+                        break;
                     case 10:
+                        Console.Clear();
                         break;
                     default:
                         Console.WriteLine("Не верная команда");
