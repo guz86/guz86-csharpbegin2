@@ -1175,6 +1175,7 @@ namespace part2
             // чтобы она выводила следующую последовательность 7 14 21 28 35 42 49 56 63 70 77 84 91 98
 
             // есть четкие границы цикл for
+            /*
             int sequence = 0;
             for (int i = 0; i < 14; i++)
             {
@@ -1182,8 +1183,47 @@ namespace part2
                 // Console.WriteLine(sequence);
                 Console.Write(sequence + " ");
             }
+            */
 
+            // Вывод имени
+            // Вывести имя в прямоугольник из символа, который введет сам пользователь.
+            // Вы запрашиваете имя, после запрашиваете символ, а после отрисовываете в консоль его имя в прямоугольнике из его символов.
+            // Пример:
+            // Alexey
+            // %
+            //
+            // %%%%%%
+            // % Alexey %
+            // %%%%%%
+            //
+            // Примечание:
+            // Длину строки можно всегда узнать через свойство Length
+            // string someString = “Hello”;
+            // Console.WriteLine(someString.Length); //5
 
+            string name;
+            string symbol;
+
+            Console.Write("Введите имя:");
+            name = Console.ReadLine();
+            Console.WriteLine("Введите символ:  ");
+            symbol = Console.ReadLine();
+            
+            
+            for (int i = 0; i < name.Length+4; i++)
+            {
+                Console.Write(symbol);
+
+            }
+
+            Console.Write("\n"+symbol+" "+name+ " "+symbol+"\n");
+
+            for (int i = 0; i < name.Length+4; i++)
+            {
+                Console.Write(symbol);
+
+            }
+            Console.Write("\n");
 
 
 
