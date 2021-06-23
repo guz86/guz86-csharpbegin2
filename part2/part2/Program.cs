@@ -1262,6 +1262,7 @@ namespace part2
             */
 
             // PasswordCheck_v2
+            /*
             string password = "666";
             Console.WriteLine("Доступ закрыт!");
 
@@ -1279,9 +1280,93 @@ namespace part2
                     break;
                 }
             }
+            */
+
+            // Бой с боссом
+            // Легенда: Вы – теневой маг(можете быть вообще хоть кем) и у вас в арсенале есть несколько заклинаний,
+            // которые вы можете использовать против Босса.Вы должны уничтожить босса и только после этого будет вам покой.
+            // Формально: перед вами босс, у которого есть определенное кол - во жизней и определенный ответный урон.
+            // У вас есть 4 заклинания для нанесения урона боссу.Программа завершается только после смерти босса или смерти пользователя.
+            // Пример заклинаний
+            // Рашамон – призывает теневого духа для нанесения атаки(Отнимает 100 хп игроку)
+            // Хуганзакура(Может быть выполнен только после призыва теневого духа), наносит 100 ед.урона
+            // Межпространственный разлом – позволяет скрыться в разломе и восстановить 250 хп.Урон босса по вам не проходит
+            // Заклинания должны иметь схожий характер и быть достаточно сложными, они должны иметь какие-то условия выполнения(пример -Хуганзакура).
+            // Босс должен иметь возможность убить пользователя.
+
+            // BossFighter_v1
+
+            Random rand = new Random();
+
+            int bossHealth = rand.Next(10000, 20000);
+            int bossDamage = rand.Next(100, 300);
+            int playerHealth = rand.Next(450, 850);
+
+            int spell;
+            int spellOne = rand.Next(50, 400);
+            bool spirit;
+            int spellTwo = rand.Next(100,200);
+            int spellThree = rand.Next (100,300);
+            int spellFour = rand.Next(30,70);
+            int spellFourEnd = rand.Next(5,50);
+            int spellFive = rand.Next(25,75);
 
 
 
+            Console.WriteLine("Вы вышли на бой с Боссом!");
+            Console.WriteLine("Health Boss: "+ bossHealth+", Damage: "+bossDamage+" | Your Health: " + playerHealth);
+            Console.WriteLine("Сила заклинаний: \nРашамон " + spellOne+ ", \nХуганзакура "
+                + spellTwo+ ", \nРазлом " + spellThree+ ", \nАвертула " + spellFour + "-" + spellFourEnd+ ", " + "\nКарабанжа " + spellFive);
+
+            while (bossHealth > 0 && playerHealth >0 )
+            {
+
+                Console.Write("Выбери номер заклинания - Рашамон(1), Хуганзакура(2), Разлом(3), Авертула(4), Карабаранжа(5): ");
+                spell = Convert.ToInt32(Console.ReadLine());
+
+                switch (spell)
+                {
+                    // Рашамон - призывает теневого духа для нанесения атаки -50хп игроку
+                    case 1:
+                        Console.WriteLine("Вызывается теневой дух "+ spellOne+" HP отнимается у Вас!");
+                        playerHealth -= spellOne;
+                        spirit = true;
+                        break;
+                    // Хугунзакура - 100 урона от теневого духа, только если теневой дух вызван.
+                    case 2:
+                        break;
+                    // Разлом - скрыться и восстановить 250 хп, урона от босса нет
+                    case 3:
+                        break;
+                    // Авертула - высасывать душу из босса, разово снимет 60хп дополнительно будет отниматься следующие 2 атаки по 30 хп. Можно выполнить если нет теневого духа.
+                    case 4:
+                        break;
+                    // Карабаранжа - отразить удар босса, хп не снимется, но следующая атака босса будет на 50% ниже по урону. выполняется если босс не горит. 
+                    case 5:
+                        break;
+
+                }
+
+                // Boss attack
+                Console.WriteLine("Босс наносит удар: "+ bossDamage);
+
+
+                Console.WriteLine("Health Boss: " + bossHealth + " | Your Health: " + playerHealth);
+
+            }
+
+            if (bossHealth <= 0 && playerHealth <= 0)
+            {
+                Console.WriteLine("Оба мертвы");
+            }
+            else if (bossHealth <= 0)
+            {
+                Console.WriteLine("Вы победили Босса!");
+            }
+            else if (playerHealth <= 0)
+            {
+                Console.WriteLine("Вы проиграли!");
+            }
 
 
 
