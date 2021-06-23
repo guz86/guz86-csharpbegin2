@@ -1202,12 +1202,12 @@ namespace part2
             // Console.WriteLine(someString.Length); //5
 
             string name;
-            string symbol;
+            char symbol;
 
             Console.Write("Введите имя:");
             name = Console.ReadLine();
             Console.WriteLine("Введите символ:  ");
-            symbol = Console.ReadLine();
+            symbol = Convert.ToChar( Console.ReadLine());
             
             
             for (int i = 0; i < name.Length+4; i++)
