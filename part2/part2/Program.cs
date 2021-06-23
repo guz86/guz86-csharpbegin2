@@ -1234,6 +1234,7 @@ namespace part2
             // Если пользователь неверно ввел пароль 3 раза, программа завершается.
 
             // PasswordCheck_v1
+            /*
             int i = 0;
             string password = "666";
             Console.WriteLine("Доступ закрыт!");
@@ -1258,7 +1259,26 @@ namespace part2
                 }
 
             }
+            */
 
+            // PasswordCheck_v2
+            string password = "666";
+            Console.WriteLine("Доступ закрыт!");
+
+            for (int i = 0; i < 3; i++)
+            {
+                Console.Write("Введите пароль:");
+                // Object.Equals Метод Определяет, равны ли два экземпляра объекта. person1.Equals(person2) 
+                if (!password.Equals( Console.ReadLine() ) )
+                {
+                    Console.WriteLine("Не верный пароль");
+                }
+                else
+                {
+                    Console.WriteLine("Секретное сообщение: И приснился мне, город с незнакомыми людьми, вышли все под дождь...");
+                    break;
+                }
+            }
 
 
 
