@@ -1303,55 +1303,133 @@ namespace part2
             int playerHealth = rand.Next(450, 850);
 
             int spell;
-            int spellOne = rand.Next(50, 400);
-            bool spirit;
-            int spellTwo = rand.Next(100,200);
-            int spellThree = rand.Next (100,300);
-            int spellFour = rand.Next(30,70);
-            int spellFourEnd = rand.Next(5,50);
-            int spellFive = rand.Next(25,75);
+            int spellOne = rand.Next(50, 100);
+            bool spirit = false;
+            int spellTwo = rand.Next(300, 800);
+            int spellThree = rand.Next(100, 300);
+            int spellFour = rand.Next(130, 170);
+            int spellFourEnd = rand.Next(15, 90);
+            bool sucksSpellFour = false;
+            int spellFive = 1;
+            bool attackspellFive = false;
 
-
+            int attackbossDamage;
+            int attackSpellThree;
+            int iFour = 0;
+            int iFive = 0;
 
             Console.WriteLine("Вы вышли на бой с Боссом!");
-            Console.WriteLine("Health Boss: "+ bossHealth+", Damage: "+bossDamage+" | Your Health: " + playerHealth);
-            Console.WriteLine("Сила заклинаний: \nРашамон " + spellOne+ ", \nХуганзакура "
-                + spellTwo+ ", \nРазлом " + spellThree+ ", \nАвертула " + spellFour + "-" + spellFourEnd+ ", " + "\nКарабанжа " + spellFive);
+            Console.WriteLine("Health Boss: " + bossHealth + ", Damage: " + bossDamage + " | Your Health: " + playerHealth);
+            Console.WriteLine("Сила заклинаний: \nРашамон " + spellOne + ", \nХуганзакура "
+                + spellTwo + ", \nРазлом " + spellThree + ", \nАвертула " + spellFour + "-" + spellFourEnd + ", " + "\nКарабанжа " + spellFive);
 
-            while (bossHealth > 0 && playerHealth >0 )
+            while (bossHealth > 0 && playerHealth > 0)
             {
-
+                Console.WriteLine("\n**********************************************************************************");
                 Console.Write("Выбери номер заклинания - Рашамон(1), Хуганзакура(2), Разлом(3), Авертула(4), Карабаранжа(5): ");
                 spell = Convert.ToInt32(Console.ReadLine());
 
+                Console.WriteLine("**********************************************************************************\n");
                 switch (spell)
                 {
                     // Рашамон - призывает теневого духа для нанесения атаки -50хп игроку
                     case 1:
-                        Console.WriteLine("Вызывается теневой дух "+ spellOne+" HP отнимается у Вас!");
+                        Console.WriteLine("Вызывается теневой дух " + spellOne + " HP отнимается у Вас!");
                         playerHealth -= spellOne;
                         spirit = true;
                         break;
                     // Хугунзакура - 100 урона от теневого духа, только если теневой дух вызван.
                     case 2:
+                        if (spirit)
+                        {
+                            bossHealth -= spellTwo;
+                            Console.WriteLine("Вы снесли Боссу " + spellTwo + " HP!");
+                            spirit = false;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Дух не вызван, сначала произнесите Рашамон!");
+                        }
                         break;
                     // Разлом - скрыться и восстановить 250 хп, урона от босса нет
                     case 3:
+                        attackSpellThree = rand.Next(50, spellThree);
+                        playerHealth += attackSpellThree;
+                        Console.WriteLine("Вы восстановили " + attackSpellThree + " HP");
                         break;
-                    // Авертула - высасывать душу из босса, разово снимет 60хп дополнительно будет отниматься следующие 2 атаки по 30 хп. Можно выполнить если нет теневого духа.
+                    // Авертула - высасывать душу из босса, разово снимет 60хп и пополнит их герою дополнительно будет отниматься следующие 2 атаки по 30 хп. Можно выполнить если нет теневого духа.
                     case 4:
+
+                        Console.WriteLine("Вы высасываете душу у босса, он потерял и вы восстановили " + spellFour + " HP!");
+                        Console.WriteLine("На босса наложено заклятие");
+                        bossHealth -= spellFour;
+                        playerHealth += spellFour;
+                        sucksSpellFour = true;
                         break;
-                    // Карабаранжа - отразить удар босса, хп не снимется, но следующая атака босса будет на 50% ниже по урону. выполняется если босс не горит. 
+                    // Карабаранжа - отразить удар босса, хп не снимется, но следующая атака босса будет на 50% ниже по урону. выполняется если босс не под проклятием. 
                     case 5:
+                        if (sucksSpellFour == false)
+                        {
+                            spellFive = 0;
+                            attackspellFive = true;
+                        }
                         break;
 
                 }
 
+                if (sucksSpellFour)
+                {
+                    
+                    if (iFour >= 1)
+                    {
+                        bossHealth -= spellFourEnd;
+
+                        playerHealth += spellFour;
+                        Console.WriteLine("При высасывании души босс дополнительно теряет, а Вы получаете " + spellFourEnd + " HP");
+                    }
+                    iFour += 1;
+
+                    if (iFour == 3)
+                    {
+                        sucksSpellFour = false;
+                        Console.WriteLine("Заклятие с босса снято!");
+                        iFour = 0;
+                    }
+
+
+
+                }
+
+
                 // Boss attack
-                Console.WriteLine("Босс наносит удар: "+ bossDamage);
+                attackbossDamage = rand.Next(90, bossDamage) * spellFive;
+                // attackspellFive
+                if (attackspellFive)
+
+                {
+                    if (iFive == 1) {
+                        attackbossDamage = attackbossDamage / 2;
+                        Console.WriteLine("Урон босса уменьшен в 2 раза!");
+  
+                    }
+                    iFive += 1;
+                    if (iFive == 2)
+                    {
+                        attackspellFive = false;
+                        iFive = 0;
+                    }
+                }
 
 
-                Console.WriteLine("Health Boss: " + bossHealth + " | Your Health: " + playerHealth);
+                // spellFive обнуляем действие 5 спела
+                spellFive = 1;
+
+
+                Console.WriteLine("Босс наносит удар: " + attackbossDamage);
+                playerHealth -= attackbossDamage;
+
+
+                Console.WriteLine("Health Boss: " + bossHealth + " | Your Health: " + playerHealth+ "\n");
 
             }
 
