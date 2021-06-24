@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace part2
 {
@@ -1296,6 +1297,8 @@ namespace part2
 
             // BossFighter_v1
 
+            
+
             Random rand = new Random();
 
             int bossHealth = rand.Next(10000, 20000);
@@ -1326,11 +1329,12 @@ namespace part2
 
             while (bossHealth > 0 && playerHealth > 0)
             {
-                Console.WriteLine("\n**********************************************************************************");
-                Console.Write("Выбери номер заклинания - Рашамон(1), Хуганзакура(2), Разлом(3), Авертула(4), Карабаранжа(5): ");
+                Console.WriteLine("\n* * * * * * * * * ");
+                Console.Write(" >> Выбери номер заклинания - Рашамон(1), Хуганзакура(2), Разлом(3), Авертула(4), Карабаранжа(5): ");
                 spell = Convert.ToInt32(Console.ReadLine());
 
-                Console.WriteLine("**********************************************************************************\n");
+                Console.WriteLine("* * * * * * * * * \n");
+                Thread.Sleep(1500);
                 switch (spell)
                 {
                     // Рашамон - призывает теневого духа для нанесения атаки -50хп игроку
@@ -1372,9 +1376,9 @@ namespace part2
                             break;
                         }
                     // Авертула - высасывать душу из босса, разово снимет 60хп и пополнит их герою дополнительно будет отниматься следующие 2 атаки по 30 хп. Можно выполнить если нет теневого духа.
-                    case 4:
-
+                    case 4: 
                         Console.WriteLine("Вы высасываете душу у босса, он потерял и вы восстановили " + spellFour + " HP!");
+                        Thread.Sleep(1500);
                         Console.WriteLine("На босса наложено заклятие");
                         bossHealth -= spellFour;
                         playerHealth += spellFour;
@@ -1387,10 +1391,18 @@ namespace part2
                     case 5:
                         if (sucksSpellFour == false)
                         {
+                            Console.WriteLine("Вы отражаете удар Босса, его мораль понижена, следующая атака в 2 раза ниже.");
                             spellFive = 0;
                             attackspellFive = true;
                         }
+                        else
+                        {
+                            Console.WriteLine("Босс под проклятием, нельзя использовать заклинание Карабанжа!");
+                        }
                         flagSpellThree = false;
+                        break;
+                    default:
+                        Console.WriteLine("Вы не знаете это заклинание");
                         break;
 
                 }
@@ -1443,26 +1455,29 @@ namespace part2
                 // spellFive обнуляем действие 5 спела
                 spellFive = 1;
 
-
+                Thread.Sleep(1500);
                 Console.WriteLine("Босс наносит удар: " + attackbossDamage);
                 playerHealth -= attackbossDamage;
 
-
-                Console.WriteLine("Health Boss: " + bossHealth + " | Your Health: " + playerHealth + "\n");
+                Thread.Sleep(1500);
+                Console.WriteLine("\nHealth Boss: " + bossHealth + " | Your Health: " + playerHealth + "\n");
 
             }
-
+            Thread.Sleep(1500);
             if (bossHealth <= 0 && playerHealth <= 0)
             {
                 Console.WriteLine("Оба мертвы");
+                Console.ReadKey();
             }
             else if (bossHealth <= 0)
             {
                 Console.WriteLine("Вы победили Босса!");
+                Console.ReadKey();
             }
             else if (playerHealth <= 0)
             {
                 Console.WriteLine("Вы проиграли!");
+                Console.ReadKey();
             }
 
 
