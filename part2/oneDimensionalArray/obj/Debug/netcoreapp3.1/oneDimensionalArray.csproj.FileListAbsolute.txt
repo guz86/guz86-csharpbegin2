@@ -1,0 +1,13 @@
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\oneDimensionalArray\bin\Debug\netcoreapp3.1\oneDimensionalArray.exe
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\oneDimensionalArray\bin\Debug\netcoreapp3.1\oneDimensionalArray.deps.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\oneDimensionalArray\bin\Debug\netcoreapp3.1\oneDimensionalArray.runtimeconfig.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\oneDimensionalArray\bin\Debug\netcoreapp3.1\oneDimensionalArray.runtimeconfig.dev.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\oneDimensionalArray\bin\Debug\netcoreapp3.1\oneDimensionalArray.dll
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\oneDimensionalArray\bin\Debug\netcoreapp3.1\oneDimensionalArray.pdb
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\oneDimensionalArray\obj\Debug\netcoreapp3.1\oneDimensionalArray.csproj.AssemblyReference.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\oneDimensionalArray\obj\Debug\netcoreapp3.1\oneDimensionalArray.AssemblyInfoInputs.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\oneDimensionalArray\obj\Debug\netcoreapp3.1\oneDimensionalArray.AssemblyInfo.cs
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\oneDimensionalArray\obj\Debug\netcoreapp3.1\oneDimensionalArray.csproj.CoreCompileInputs.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\oneDimensionalArray\obj\Debug\netcoreapp3.1\oneDimensionalArray.dll
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\oneDimensionalArray\obj\Debug\netcoreapp3.1\oneDimensionalArray.pdb
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\oneDimensionalArray\obj\Debug\netcoreapp3.1\oneDimensionalArray.genruntimeconfig.cache
