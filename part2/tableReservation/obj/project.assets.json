@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\guz\\source\\repos\\guz86-csharpbegin2\\part2\\oneDimensionalArray\\oneDimensionalArray.csproj",
-      "projectName": "oneDimensionalArray",
-      "projectPath": "C:\\Users\\guz\\source\\repos\\guz86-csharpbegin2\\part2\\oneDimensionalArray\\oneDimensionalArray.csproj",
+      "projectUniqueName": "C:\\Users\\guz\\source\\repos\\guz86-csharpbegin2\\part2\\tableReservation\\tableReservation.csproj",
+      "projectName": "tableReservation",
+      "projectPath": "C:\\Users\\guz\\source\\repos\\guz86-csharpbegin2\\part2\\tableReservation\\tableReservation.csproj",
       "packagesPath": "C:\\Users\\guz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\guz\\source\\repos\\guz86-csharpbegin2\\part2\\oneDimensionalArray\\obj\\",
+      "outputPath": "C:\\Users\\guz\\source\\repos\\guz86-csharpbegin2\\part2\\tableReservation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\guz\\AppData\\Roaming\\NuGet\\NuGet.Config",

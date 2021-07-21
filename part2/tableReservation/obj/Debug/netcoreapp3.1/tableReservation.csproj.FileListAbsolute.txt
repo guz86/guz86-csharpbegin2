@@ -1,0 +1,13 @@
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\tableReservation\bin\Debug\netcoreapp3.1\tableReservation.exe
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\tableReservation\bin\Debug\netcoreapp3.1\tableReservation.deps.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\tableReservation\bin\Debug\netcoreapp3.1\tableReservation.runtimeconfig.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\tableReservation\bin\Debug\netcoreapp3.1\tableReservation.runtimeconfig.dev.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\tableReservation\bin\Debug\netcoreapp3.1\tableReservation.dll
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\tableReservation\bin\Debug\netcoreapp3.1\tableReservation.pdb
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\tableReservation\obj\Debug\netcoreapp3.1\tableReservation.csproj.AssemblyReference.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\tableReservation\obj\Debug\netcoreapp3.1\tableReservation.AssemblyInfoInputs.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\tableReservation\obj\Debug\netcoreapp3.1\tableReservation.AssemblyInfo.cs
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\tableReservation\obj\Debug\netcoreapp3.1\tableReservation.csproj.CoreCompileInputs.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\tableReservation\obj\Debug\netcoreapp3.1\tableReservation.dll
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\tableReservation\obj\Debug\netcoreapp3.1\tableReservation.pdb
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\tableReservation\obj\Debug\netcoreapp3.1\tableReservation.genruntimeconfig.cache

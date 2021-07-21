@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "part2", "part2\part2.csproj", "{B0AD6EA4-9245-45C3-B4DF-179AD3C07CF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oneDimensionalArray", "oneDimensionalArray\oneDimensionalArray.csproj", "{BE6400D9-AAAD-43DD-80B5-E3D4FDACD7D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "oneDimensionalArray", "oneDimensionalArray\oneDimensionalArray.csproj", "{BE6400D9-AAAD-43DD-80B5-E3D4FDACD7D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tableReservation", "tableReservation\tableReservation.csproj", "{751103EE-352C-4ECD-8AA7-C589B62278D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{BE6400D9-AAAD-43DD-80B5-E3D4FDACD7D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE6400D9-AAAD-43DD-80B5-E3D4FDACD7D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE6400D9-AAAD-43DD-80B5-E3D4FDACD7D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{751103EE-352C-4ECD-8AA7-C589B62278D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{751103EE-352C-4ECD-8AA7-C589B62278D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{751103EE-352C-4ECD-8AA7-C589B62278D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{751103EE-352C-4ECD-8AA7-C589B62278D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
