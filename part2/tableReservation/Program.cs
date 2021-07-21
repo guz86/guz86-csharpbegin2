@@ -23,9 +23,26 @@ namespace tableReservation
                 }
 
 
-                Console.SetCursorPosition(0, 1); 
+                Console.SetCursorPosition(0, 1);
+                int chooseUser = 0;
+                try
+                {
+                    chooseUser = Convert.ToInt32(Console.ReadLine());
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("Не верный выбор");
 
-                switch (Convert.ToInt32(Console.ReadLine()))
+
+                    Console.ReadKey();
+                    Console.Clear();
+                    continue;
+                }
+
+
+                
+
+                switch (chooseUser)
                 {
                     case 1:
                         int userTable, UserPlace;
@@ -56,6 +73,9 @@ namespace tableReservation
 
                     case 2:
                         openCafe = false;
+                        break;
+                    default:
+                        Console.WriteLine("Повторите попытку");
                         break;
 
                 }
