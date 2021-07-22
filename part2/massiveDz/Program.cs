@@ -40,7 +40,7 @@ namespace massiveDz
 
             while (true)
             {
-                Console.WriteLine("Добавить значение в массив 1 или любую клавишу");
+                Console.WriteLine("Добавить значение в массив - 1");
 
                 switch (Convert.ToInt32(Console.ReadLine()))
                 {
@@ -50,7 +50,7 @@ namespace massiveDz
                         myArrayKeyboard = new int[Convert.ToInt32(Console.ReadLine())];
                         for (int i = 0; i < myArrayKeyboard.Length; i++)
                         {
-                            Console.WriteLine("Введите значение:");
+                            Console.Write($"Введите значение элемента массива {i}: ");
                             myArrayKeyboard[i] = Convert.ToInt32(Console.ReadLine());
                         }
                         for (int i = 0; i < myArrayKeyboard.Length; i++)
