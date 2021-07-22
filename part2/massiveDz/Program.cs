@@ -35,38 +35,43 @@ namespace massiveDz
 
             //  заполнить массив с клавиатуры
 
+
+
+            //while (true)
+            //{
+            //Console.WriteLine("\nДобавить значение в массив - 1");
             int[] myArrayKeyboard;
 
 
-            while (true)
+            //switch (Convert.ToInt32(Console.ReadLine()))
+            //{
+            //        case 1:
+
+            Console.WriteLine("Сколько элементов будет в массиве:");
+            myArrayKeyboard = new int[Convert.ToInt32(Console.ReadLine())];
+            for (int i = 0; i < myArrayKeyboard.Length; i++)
             {
-                Console.WriteLine("Добавить значение в массив - 1");
-
-                switch (Convert.ToInt32(Console.ReadLine()))
-                {
-                    case 1:
-
-                        Console.WriteLine("Сколько элементов будет в массиве:");
-                        myArrayKeyboard = new int[Convert.ToInt32(Console.ReadLine())];
-                        for (int i = 0; i < myArrayKeyboard.Length; i++)
-                        {
-                            Console.Write($"Введите значение элемента массива {i}: ");
-                            myArrayKeyboard[i] = Convert.ToInt32(Console.ReadLine());
-                        }
-                        for (int i = 0; i < myArrayKeyboard.Length; i++)
-                        {
-                            Console.Write(myArrayKeyboard[i]+" ");
-                        }
-                        break;
-
-                    default:
-
-                        break;
-                }
-
-
-
+                Console.Write($"Введите значение элемента массива {i}: ");
+                myArrayKeyboard[i] = Convert.ToInt32(Console.ReadLine());
             }
+
+            Console.Write("Мы получили массив: ");
+            for (int i = 0; i < myArrayKeyboard.Length; i++)
+            {
+                Console.Write(myArrayKeyboard[i] + " ");
+            }
+            Console.ReadKey();
+
+            //            break;
+
+            //default:
+
+            //break;
+            // }
+
+
+
+            //}
 
 
         }
