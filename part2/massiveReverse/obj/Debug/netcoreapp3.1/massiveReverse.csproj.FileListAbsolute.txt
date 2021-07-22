@@ -10,3 +10,4 @@ C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveReverse\obj\Debug\netc
 C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveReverse\obj\Debug\netcoreapp3.1\massiveReverse.dll
 C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveReverse\obj\Debug\netcoreapp3.1\massiveReverse.pdb
 C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveReverse\obj\Debug\netcoreapp3.1\massiveReverse.genruntimeconfig.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveReverse\obj\Debug\netcoreapp3.1\massiveReverse.csproj.AssemblyReference.cache
