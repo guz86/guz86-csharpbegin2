@@ -1,0 +1,13 @@
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\findTheSmallestNumberInTheArray\bin\Debug\netcoreapp3.1\findTheSmallestNumberInTheArray.exe
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\findTheSmallestNumberInTheArray\bin\Debug\netcoreapp3.1\findTheSmallestNumberInTheArray.deps.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\findTheSmallestNumberInTheArray\bin\Debug\netcoreapp3.1\findTheSmallestNumberInTheArray.runtimeconfig.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\findTheSmallestNumberInTheArray\bin\Debug\netcoreapp3.1\findTheSmallestNumberInTheArray.runtimeconfig.dev.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\findTheSmallestNumberInTheArray\bin\Debug\netcoreapp3.1\findTheSmallestNumberInTheArray.dll
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\findTheSmallestNumberInTheArray\bin\Debug\netcoreapp3.1\findTheSmallestNumberInTheArray.pdb
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\findTheSmallestNumberInTheArray\obj\Debug\netcoreapp3.1\findTheSmallestNumberInTheArray.csproj.AssemblyReference.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\findTheSmallestNumberInTheArray\obj\Debug\netcoreapp3.1\findTheSmallestNumberInTheArray.AssemblyInfoInputs.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\findTheSmallestNumberInTheArray\obj\Debug\netcoreapp3.1\findTheSmallestNumberInTheArray.AssemblyInfo.cs
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\findTheSmallestNumberInTheArray\obj\Debug\netcoreapp3.1\findTheSmallestNumberInTheArray.csproj.CoreCompileInputs.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\findTheSmallestNumberInTheArray\obj\Debug\netcoreapp3.1\findTheSmallestNumberInTheArray.dll
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\findTheSmallestNumberInTheArray\obj\Debug\netcoreapp3.1\findTheSmallestNumberInTheArray.pdb
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\findTheSmallestNumberInTheArray\obj\Debug\netcoreapp3.1\findTheSmallestNumberInTheArray.genruntimeconfig.cache
