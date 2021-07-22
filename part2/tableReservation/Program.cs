@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace tableReservation
 {
@@ -25,6 +26,7 @@ namespace tableReservation
 
                 Console.SetCursorPosition(0, 1);
                 int chooseUser = 0;
+
                 try
                 {
                     chooseUser = Convert.ToInt32(Console.ReadLine());
@@ -81,6 +83,31 @@ namespace tableReservation
                 }
                 Console.ReadKey();
                 Console.Clear();
+
+
+                int[] myArray; // объявляем массив
+                myArray = new int[5]; // выделяем под него память
+                // аналогично
+                int[] myArrayTwo = new int[5];
+                // элементы массива
+                int[] myArrayThree = new int[5] { 1, 2, 3, 3, 3 };
+                // аналогично без явного укозания количества элементов
+                int[] myArrayFour = new int[] { 1, 2, 2, 3, 4 };
+                // аналогично можно упустить тип элементов
+                int[] myArrayFive = new[] { 1, 2, 3, 4, 4, 4 };
+                // аналогично еще более упрощаем
+                int[] myArraySix = { 1, 2, 3, 4, 5, 2, 2, 2 };
+
+                // инициализация массива определенными значениями
+                // using System.Linq;
+                int[] myArraySeven = Enumerable.Repeat(4, 10).ToArray();
+
+                int[] myArrayEight = Enumerable.Range(0, 99).ToArray();
+
+
+
+
+
 
 
             }
