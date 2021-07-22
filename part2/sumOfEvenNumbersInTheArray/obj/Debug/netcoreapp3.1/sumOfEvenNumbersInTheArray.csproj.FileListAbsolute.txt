@@ -1,0 +1,12 @@
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\sumOfEvenNumbersInTheArray\bin\Debug\netcoreapp3.1\sumOfEvenNumbersInTheArray.exe
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\sumOfEvenNumbersInTheArray\bin\Debug\netcoreapp3.1\sumOfEvenNumbersInTheArray.deps.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\sumOfEvenNumbersInTheArray\bin\Debug\netcoreapp3.1\sumOfEvenNumbersInTheArray.runtimeconfig.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\sumOfEvenNumbersInTheArray\bin\Debug\netcoreapp3.1\sumOfEvenNumbersInTheArray.runtimeconfig.dev.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\sumOfEvenNumbersInTheArray\bin\Debug\netcoreapp3.1\sumOfEvenNumbersInTheArray.dll
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\sumOfEvenNumbersInTheArray\bin\Debug\netcoreapp3.1\sumOfEvenNumbersInTheArray.pdb
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\sumOfEvenNumbersInTheArray\obj\Debug\netcoreapp3.1\sumOfEvenNumbersInTheArray.AssemblyInfoInputs.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\sumOfEvenNumbersInTheArray\obj\Debug\netcoreapp3.1\sumOfEvenNumbersInTheArray.AssemblyInfo.cs
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\sumOfEvenNumbersInTheArray\obj\Debug\netcoreapp3.1\sumOfEvenNumbersInTheArray.csproj.CoreCompileInputs.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\sumOfEvenNumbersInTheArray\obj\Debug\netcoreapp3.1\sumOfEvenNumbersInTheArray.dll
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\sumOfEvenNumbersInTheArray\obj\Debug\netcoreapp3.1\sumOfEvenNumbersInTheArray.pdb
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\sumOfEvenNumbersInTheArray\obj\Debug\netcoreapp3.1\sumOfEvenNumbersInTheArray.genruntimeconfig.cache
