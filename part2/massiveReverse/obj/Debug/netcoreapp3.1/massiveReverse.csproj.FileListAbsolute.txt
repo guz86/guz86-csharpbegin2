@@ -1,0 +1,12 @@
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveReverse\bin\Debug\netcoreapp3.1\massiveReverse.exe
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveReverse\bin\Debug\netcoreapp3.1\massiveReverse.deps.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveReverse\bin\Debug\netcoreapp3.1\massiveReverse.runtimeconfig.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveReverse\bin\Debug\netcoreapp3.1\massiveReverse.runtimeconfig.dev.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveReverse\bin\Debug\netcoreapp3.1\massiveReverse.dll
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveReverse\bin\Debug\netcoreapp3.1\massiveReverse.pdb
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveReverse\obj\Debug\netcoreapp3.1\massiveReverse.AssemblyInfoInputs.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveReverse\obj\Debug\netcoreapp3.1\massiveReverse.AssemblyInfo.cs
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveReverse\obj\Debug\netcoreapp3.1\massiveReverse.csproj.CoreCompileInputs.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveReverse\obj\Debug\netcoreapp3.1\massiveReverse.dll
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveReverse\obj\Debug\netcoreapp3.1\massiveReverse.pdb
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveReverse\obj\Debug\netcoreapp3.1\massiveReverse.genruntimeconfig.cache
