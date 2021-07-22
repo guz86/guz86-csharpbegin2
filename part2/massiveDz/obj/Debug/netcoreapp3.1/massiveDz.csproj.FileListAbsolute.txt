@@ -1,0 +1,13 @@
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveDz\obj\Debug\netcoreapp3.1\massiveDz.csproj.AssemblyReference.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveDz\obj\Debug\netcoreapp3.1\massiveDz.AssemblyInfoInputs.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveDz\obj\Debug\netcoreapp3.1\massiveDz.AssemblyInfo.cs
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveDz\obj\Debug\netcoreapp3.1\massiveDz.csproj.CoreCompileInputs.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveDz\bin\Debug\netcoreapp3.1\massiveDz.exe
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveDz\bin\Debug\netcoreapp3.1\massiveDz.deps.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveDz\bin\Debug\netcoreapp3.1\massiveDz.runtimeconfig.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveDz\bin\Debug\netcoreapp3.1\massiveDz.runtimeconfig.dev.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveDz\bin\Debug\netcoreapp3.1\massiveDz.dll
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveDz\bin\Debug\netcoreapp3.1\massiveDz.pdb
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveDz\obj\Debug\netcoreapp3.1\massiveDz.dll
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveDz\obj\Debug\netcoreapp3.1\massiveDz.pdb
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\massiveDz\obj\Debug\netcoreapp3.1\massiveDz.genruntimeconfig.cache
