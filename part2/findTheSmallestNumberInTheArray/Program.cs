@@ -23,9 +23,10 @@ namespace findTheSmallestNumberInTheArray
 
             // типичное решение для этой задачи
             // using System.Linq;
-            int result = myArray.Min();
+            // int result = myArray.Min();
             // int result = myArray.Max();
-            Console.WriteLine(result);
+
+            Console.WriteLine(myArray.Min());
 
         
         }
