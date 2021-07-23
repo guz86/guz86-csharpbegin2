@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace findTheSmallestNumberInTheArray
 {
@@ -8,17 +9,25 @@ namespace findTheSmallestNumberInTheArray
         {
             int[] myArray = { 1, 2, 3, 4, 5, 6, -5, -6, -999 };
             // int smallValue = int.MaxValue;
-            int smallValue = myArray[0];
+            int minValue = myArray[0];
             // for (int i = 0; i < myArray.Length; i++)
             for (int i = 1; i < myArray.Length; i++)
             {
-                if (myArray[i] < smallValue)
+                if (myArray[i] < minValue)
                 {
-                    smallValue = myArray[i];
+                    minValue = myArray[i];
                 }
                 
             }
-            Console.WriteLine(smallValue);
+            Console.WriteLine(minValue);
+
+            // типичное решение для этой задачи
+            // using System.Linq;
+            int result = myArray.Min();
+            // int result = myArray.Max();
+            Console.WriteLine(result);
+
+        
         }
     }
 }
