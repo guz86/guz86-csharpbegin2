@@ -24,6 +24,9 @@ namespace sumOfEvenNumbersInTheArray
 
             // реализация задачи // using System.Linq;
             Console.WriteLine(myArray.Where(i => i % 2 == 0).Sum());
+            // Самое маленькое не четное значение
+            Console.WriteLine(myArray.Where(i => i % 2 != 0).Min());
+
 
 
         }
