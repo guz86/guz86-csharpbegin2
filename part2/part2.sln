@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "massiveDz", "massiveDz\mass
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "massiveReverse", "massiveReverse\massiveReverse.csproj", "{145D251F-D763-491A-8669-4EBD303AB907}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sumOfEvenNumbersInTheArray", "sumOfEvenNumbersInTheArray\sumOfEvenNumbersInTheArray.csproj", "{7B408A1F-C8D8-48D2-B61B-09E51AB91583}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sumOfEvenNumbersInTheArray", "sumOfEvenNumbersInTheArray\sumOfEvenNumbersInTheArray.csproj", "{7B408A1F-C8D8-48D2-B61B-09E51AB91583}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "findTheSmallestNumberInTheArray", "findTheSmallestNumberInTheArray\findTheSmallestNumberInTheArray.csproj", "{2E47C5B5-2655-48F1-9024-ACC3D2A2FFD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "findTheSmallestNumberInTheArray", "findTheSmallestNumberInTheArray\findTheSmallestNumberInTheArray.csproj", "{2E47C5B5-2655-48F1-9024-ACC3D2A2FFD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uniqueArrayElements", "uniqueArrayElements\uniqueArrayElements.csproj", "{1E377887-8339-4577-AA07-B42E17DE6E8C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{2E47C5B5-2655-48F1-9024-ACC3D2A2FFD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E47C5B5-2655-48F1-9024-ACC3D2A2FFD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E47C5B5-2655-48F1-9024-ACC3D2A2FFD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E377887-8339-4577-AA07-B42E17DE6E8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E377887-8339-4577-AA07-B42E17DE6E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E377887-8339-4577-AA07-B42E17DE6E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E377887-8339-4577-AA07-B42E17DE6E8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,13 @@
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\uniqueArrayElements\obj\Debug\netcoreapp3.1\uniqueArrayElements.csproj.AssemblyReference.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\uniqueArrayElements\obj\Debug\netcoreapp3.1\uniqueArrayElements.AssemblyInfoInputs.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\uniqueArrayElements\obj\Debug\netcoreapp3.1\uniqueArrayElements.AssemblyInfo.cs
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\uniqueArrayElements\obj\Debug\netcoreapp3.1\uniqueArrayElements.csproj.CoreCompileInputs.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\uniqueArrayElements\bin\Debug\netcoreapp3.1\uniqueArrayElements.exe
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\uniqueArrayElements\bin\Debug\netcoreapp3.1\uniqueArrayElements.deps.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\uniqueArrayElements\bin\Debug\netcoreapp3.1\uniqueArrayElements.runtimeconfig.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\uniqueArrayElements\bin\Debug\netcoreapp3.1\uniqueArrayElements.runtimeconfig.dev.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\uniqueArrayElements\bin\Debug\netcoreapp3.1\uniqueArrayElements.dll
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\uniqueArrayElements\bin\Debug\netcoreapp3.1\uniqueArrayElements.pdb
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\uniqueArrayElements\obj\Debug\netcoreapp3.1\uniqueArrayElements.dll
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\uniqueArrayElements\obj\Debug\netcoreapp3.1\uniqueArrayElements.pdb
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\uniqueArrayElements\obj\Debug\netcoreapp3.1\uniqueArrayElements.genruntimeconfig.cache
