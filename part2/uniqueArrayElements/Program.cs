@@ -40,6 +40,9 @@ namespace uniqueArrayElements
 
                
             }
+    
+
+
 
             // сортированный массив
             for (int i = 0; i < myArray.Length; i++)
@@ -50,19 +53,76 @@ namespace uniqueArrayElements
 
             Console.WriteLine("\n\n");
 
-            int m = 0;
+        
 
-            for (int i = 0; i < myArray.Length; i++)
-            {
 
-                while (i < myArray.Length - 1 && myArray[i] == myArray[i + 1])
+            // Traditional Approach
+            int[] myArrayTwo = { 1, 3, 3, 2, 1, 3, 2, 1 };
+             
+                int n = myArrayTwo.Length;
+                
+                Console.WriteLine("Unique array elements: ");
+
+                for (int i = 0; i < n; i++)
                 {
-                    i++;
-                }
-                m++;
+                    bool isDuplicate = false;
+                    for (int j = 0; j < i; j++)
+                    {
+                        if (myArrayTwo[i] == myArrayTwo[j])
+                        {
+                            isDuplicate = true;
+                            break;
+                        }
+                    }
 
+                    if (!isDuplicate)
+                    {
+                        Console.WriteLine(myArrayTwo[i]);
+                    }
+                }
+
+
+            // add value
+
+            int[] arr = { 1, 2, 3,3,1 };
+            // create a new array
+            int x = 6;
+            int[] arrnew = new int[arr.Length + 1];
+            // old
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write(arr[i]+" ");
             }
-            Console.WriteLine("m = " + m);
+
+            // add
+            for (int i = 0; i < arrnew.Length; i++)
+            {
+                if (i < arrnew.Length - 1)
+                    arrnew[i] = arr[i];
+                else if (i == arr.Length)
+                    arrnew[i] = x;
+                //else
+                 //   arrnew[i] = arr[i - 1];
+            }
+
+            // new
+            Console.WriteLine("");
+            
+            for (int i = 0; i < arrnew.Length; i++)
+            {
+                Console.Write(arrnew[i] + " ");
+            }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
