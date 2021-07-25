@@ -54,6 +54,8 @@ namespace uniqueArrayElements
             // реализация через Linq сортировки
 
             //int[] result = myArray.OrderBy(i => i).ToArray();
+            // обратный порядок
+            //int[] result = myArray.OrderByDescending(i => i).ToArray();
 
 
 
