@@ -9,7 +9,7 @@ namespace uniqueArrayElements
         {
             // найти только уникальные элементы массива и поместить их в другой массив
 
-            int[] myArray = { 1, 3, 3, 2, 1, 3, 2, 1 };
+            int[] myArray = { 1, 3, 3, 2, 1, 322,3,1,23,56,6,5,6,7,8,9,0,3,4,5,6,7,8,33, 2, 1 };
 
 
             // отсортировать массив от меньшего к большему
@@ -53,7 +53,64 @@ namespace uniqueArrayElements
 
             Console.WriteLine("\n\n");
 
-        
+
+            // удаляем дубликаты
+           
+            int countElement = 0;
+
+            Console.WriteLine("Ищем дубликаты: ");
+
+            for (int i = 0; i < myArray.Length; i++)
+            {
+                bool isDuplicate = false;
+                for (int j = 0; j < i; j++)
+                {
+                    if (myArray[i] == myArray[j])
+                    {
+                        isDuplicate = true;
+                        break;
+                    }
+                }
+
+                if (!isDuplicate)
+                {
+                    //Console.WriteLine(myArray[i]);
+                    countElement += 1;
+                }
+            }
+            // Console.WriteLine(countElement);
+            int[] myArrayThree = new int[countElement];
+            for (int i = 0, k = -1; i < myArray.Length; i++)
+            {
+                bool isDuplicate = false;
+                for (int j = 0; j < i; j++)
+                {
+                    if (myArray[i] == myArray[j])
+                    {
+                        isDuplicate = true;
+                        break;
+                    }
+                }
+
+                if (!isDuplicate)
+                {
+                    //Console.WriteLine(myArray[i]);
+                    k++;
+                    myArrayThree[k] = myArray[i];
+                }
+            }
+
+            // new clear
+            Console.Write(" new clear array: ");
+
+            for (int i = 0; i < myArrayThree.Length; i++)
+            {
+                Console.Write(myArrayThree[i] + " ");
+            }
+
+
+            Console.WriteLine("\n-----------------");
+
 
 
             // Traditional Approach
@@ -112,7 +169,6 @@ namespace uniqueArrayElements
             {
                 Console.Write(arrnew[i] + " ");
             }
-
 
 
 
