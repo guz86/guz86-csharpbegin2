@@ -57,8 +57,8 @@ namespace uniqueArrayElements
             // обратный порядок
             //int[] result = myArray.OrderByDescending(i => i).ToArray();
 
-
-
+            // Array навести и нажать f12 чтобы посмотреть методы класса
+            // пример сортировки через методы класса Array.Sort(myArray);
 
             Console.WriteLine("\n\n");
 
@@ -204,6 +204,12 @@ namespace uniqueArrayElements
             //   {
             //      Console.Write(myArrayUniq[i]+ " ");
             //  }
+
+            // найти элемент больше 5 через метод класса array
+
+            // int res = Array.Find(myArray, i => i >5);
+
+            // пробежится по массиву и найдет первый элемент который удовлетворяет условию
 
         }
     }
