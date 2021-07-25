@@ -214,6 +214,9 @@ namespace uniqueArrayElements
 
             // int res = Array.FindLast(myArray, i => i > 5);
 
+            // вернуть массив чисел удовлетворяющих условию
+
+            int [] res =Array.FindAll(myArray, i => i > 5);
         }
     }
 }
