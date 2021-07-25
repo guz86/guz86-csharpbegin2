@@ -1,5 +1,5 @@
 ﻿using System;
-//using System.Linq;
+using System.Linq;
 
 namespace uniqueArrayElements
 {
@@ -49,6 +49,13 @@ namespace uniqueArrayElements
             {
             Console.Write(myArray[i] + " ");
             }
+
+
+            // реализация через Linq сортировки
+
+            //int[] result = myArray.OrderBy(i => i).ToArray();
+
+
 
 
             Console.WriteLine("\n\n");
