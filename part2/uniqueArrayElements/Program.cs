@@ -208,8 +208,11 @@ namespace uniqueArrayElements
             // найти элемент больше 5 через метод класса array
 
             // int res = Array.Find(myArray, i => i >5);
-
             // пробежится по массиву и найдет первый элемент который удовлетворяет условию
+
+            // поиск с конца
+
+            // int res = Array.FindLast(myArray, i => i > 5);
 
         }
     }
