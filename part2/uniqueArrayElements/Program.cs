@@ -216,7 +216,11 @@ namespace uniqueArrayElements
 
             // вернуть массив чисел удовлетворяющих условию
 
-            int [] res =Array.FindAll(myArray, i => i > 5);
+            // int [] res =Array.FindAll(myArray, i => i > 5);
+
+            // под каким индексом у нас число в массиве
+
+            // int res = Array.FindIndex(myArray, i => i == 23);
         }
     }
 }
