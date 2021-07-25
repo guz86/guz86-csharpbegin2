@@ -221,6 +221,15 @@ namespace uniqueArrayElements
             // под каким индексом у нас число в массиве
 
             // int res = Array.FindIndex(myArray, i => i == 23);
+            // с конца
+            // int res = Array.FindLastIndex(myArray, i => i == 23);
+
+            // элементы в обратном порядке через Reverse
+            // Array.Reverse(myArray);
+
+
+
+
         }
     }
 }
