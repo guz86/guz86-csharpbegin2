@@ -1,0 +1,13 @@
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\problemSolvingArray\bin\Debug\netcoreapp3.1\problemSolvingArray.exe
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\problemSolvingArray\bin\Debug\netcoreapp3.1\problemSolvingArray.deps.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\problemSolvingArray\bin\Debug\netcoreapp3.1\problemSolvingArray.runtimeconfig.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\problemSolvingArray\bin\Debug\netcoreapp3.1\problemSolvingArray.runtimeconfig.dev.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\problemSolvingArray\bin\Debug\netcoreapp3.1\problemSolvingArray.dll
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\problemSolvingArray\bin\Debug\netcoreapp3.1\problemSolvingArray.pdb
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\problemSolvingArray\obj\Debug\netcoreapp3.1\problemSolvingArray.AssemblyInfoInputs.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\problemSolvingArray\obj\Debug\netcoreapp3.1\problemSolvingArray.AssemblyInfo.cs
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\problemSolvingArray\obj\Debug\netcoreapp3.1\problemSolvingArray.csproj.CoreCompileInputs.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\problemSolvingArray\obj\Debug\netcoreapp3.1\problemSolvingArray.dll
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\problemSolvingArray\obj\Debug\netcoreapp3.1\problemSolvingArray.pdb
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\problemSolvingArray\obj\Debug\netcoreapp3.1\problemSolvingArray.genruntimeconfig.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\problemSolvingArray\obj\Debug\netcoreapp3.1\problemSolvingArray.csproj.AssemblyReference.cache
