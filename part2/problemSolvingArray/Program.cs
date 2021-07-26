@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace problemSolvingArray
 {
@@ -42,11 +43,21 @@ namespace problemSolvingArray
         }
         public static void Task2()
         {
-            // найти два наибольших элемента массива
+            // заполнить массив по возрастанию от 1 до 100
 
+            // int[] myArray = Enumerable.Range(1, 100).ToArray();
 
+            int[] myArray = new int [100];
 
+            for (int i = 0; i < 100; i++)
+            {
+                myArray[i] = i+1;
+            }
 
+            for (int i = 0; i < myArray.Length; i++)
+            {
+                Console.WriteLine(myArray[i]);
+            }
 
         }
 
