@@ -224,6 +224,19 @@ namespace uniqueArrayElements
             // с конца
             // int res = Array.FindLastIndex(myArray, i => i == 23);
 
+            // реализация поиска числа или диапозона через Linq
+
+            int[] res = myArray.Where(i => i < 70).ToArray();
+
+            int result = myArray.Where(i => i < 70).First();
+
+            // если не найдет элементов
+            int resultTwo = myArray.Where(i => i < 70).FirstOrDefault();
+
+
+
+
+
             // элементы в обратном порядке через Reverse
             // Array.Reverse(myArray);
 
