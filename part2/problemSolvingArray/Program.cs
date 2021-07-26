@@ -7,7 +7,7 @@ namespace problemSolvingArray
     {
         static void Main(string[] args)
         {
-            Task2();
+            Task3();
         }
 
         public static void Task1()
@@ -61,7 +61,30 @@ namespace problemSolvingArray
 
         }
 
+        public static void Task3()
+        {
+            // проверить нет ли в массиве одинаковых чисел
+            bool equalNumber = false;
+            int[] myArray = {  1,2,3,4,5,6,24,123,11,22};
+            
+            for (int i = 0; i < myArray.Length; i++)
+            {
+                for (int j = i+1; j < myArray.Length; j++)
+                {
+                    if (myArray[i] == myArray[j])
+                    {
+                        equalNumber = true;
+                        break;
+                    }
 
+                }
+                if (equalNumber)
+                {
+                    break;
+                }
+            }
+            Console.WriteLine(equalNumber);
+        }
 
 
 
