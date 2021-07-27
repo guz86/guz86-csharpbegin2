@@ -7,7 +7,7 @@ namespace problemSolvingArray
     {
         static void Main(string[] args)
         {
-            Task3();
+            Task4();
         }
 
         public static void Task1()
@@ -86,7 +86,24 @@ namespace problemSolvingArray
             Console.WriteLine(equalNumber);
         }
 
+        public static void Task4()
+        {
+            // переставить элементы массива в обратном порядке, используя дополнительный массив
 
+            int[] myArray = { 9, 2, 3, 4, 5, 8 };
+            int[] myArrayReverse = new int [myArray.Length];
+
+            for (int i = myArray.Length-1, j = 0; i >= 0 ; i--,j++)
+            {
+                myArrayReverse[j] = myArray[i];
+            }
+            for (int i = 0; i < myArrayReverse.Length; i++)
+            {
+                Console.Write(myArrayReverse[i]+" ");
+            }
+
+        }
+       
 
     }
 }
