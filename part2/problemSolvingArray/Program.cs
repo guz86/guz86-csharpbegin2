@@ -7,7 +7,7 @@ namespace problemSolvingArray
     {
         static void Main(string[] args)
         {
-            Task4();
+            Task5();
         }
 
         public static void Task1()
@@ -97,13 +97,31 @@ namespace problemSolvingArray
             {
                 myArrayReverse[j] = myArray[i];
             }
+            // вывод
             for (int i = 0; i < myArrayReverse.Length; i++)
             {
                 Console.Write(myArrayReverse[i]+" ");
             }
 
         }
-       
 
+        public static void Task5()
+        {
+            // переставить элементы массива в обратном порядке, используя дополнительный массив версия с урока
+
+            int[] myArray = { 9, 2, 3, 4, 5, 8 };
+            int[] myArrayReverse = new int[myArray.Length];
+
+            for (int i = 0; i < myArray.Length; i++)
+            {
+                myArrayReverse[myArray.Length - 1 - i] = myArray[i];
+            }
+            // вывод
+            for (int i = 0; i < myArrayReverse.Length; i++)
+            {
+                Console.Write(myArrayReverse[i] + " ");
+            }
+
+        }
     }
 }
