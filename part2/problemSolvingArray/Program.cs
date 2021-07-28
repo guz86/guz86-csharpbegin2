@@ -143,5 +143,9 @@ namespace problemSolvingArray
             }
         }
 
+        // задачи на двумерные массивы
+
+
+
     }
 }

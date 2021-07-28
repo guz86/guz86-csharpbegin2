@@ -1,0 +1,13 @@
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\IndicesAndRanges\bin\Debug\netcoreapp3.1\IndicesAndRanges.exe
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\IndicesAndRanges\bin\Debug\netcoreapp3.1\IndicesAndRanges.deps.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\IndicesAndRanges\bin\Debug\netcoreapp3.1\IndicesAndRanges.runtimeconfig.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\IndicesAndRanges\bin\Debug\netcoreapp3.1\IndicesAndRanges.runtimeconfig.dev.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\IndicesAndRanges\bin\Debug\netcoreapp3.1\IndicesAndRanges.dll
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\IndicesAndRanges\bin\Debug\netcoreapp3.1\IndicesAndRanges.pdb
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\IndicesAndRanges\obj\Debug\netcoreapp3.1\IndicesAndRanges.AssemblyInfoInputs.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\IndicesAndRanges\obj\Debug\netcoreapp3.1\IndicesAndRanges.AssemblyInfo.cs
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\IndicesAndRanges\obj\Debug\netcoreapp3.1\IndicesAndRanges.csproj.CoreCompileInputs.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\IndicesAndRanges\obj\Debug\netcoreapp3.1\IndicesAndRanges.dll
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\IndicesAndRanges\obj\Debug\netcoreapp3.1\IndicesAndRanges.pdb
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\IndicesAndRanges\obj\Debug\netcoreapp3.1\IndicesAndRanges.genruntimeconfig.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\IndicesAndRanges\obj\Debug\netcoreapp3.1\IndicesAndRanges.csproj.AssemblyReference.cache
