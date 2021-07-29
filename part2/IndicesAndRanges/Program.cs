@@ -47,6 +47,9 @@ namespace IndicesAndRanges
 
             // 43, 2, 1
             int[] myArrayFive = myArray[^4..^1];
+            // диапазон
+            Range MyRange = ^4..^1; 
+            int[] myArraySix = myArray[MyRange];
 
         }
     }
