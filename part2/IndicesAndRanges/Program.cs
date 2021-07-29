@@ -51,6 +51,13 @@ namespace IndicesAndRanges
             Range MyRange = ^4..^1; 
             int[] myArraySix = myArray[MyRange];
 
+            // пример работы со строками, массив с чарами
+            string myString = "Hi Kelly =)";
+            Console.WriteLine(myString);
+            Console.WriteLine(myString[0..2]);
+
+
+
         }
     }
 }
