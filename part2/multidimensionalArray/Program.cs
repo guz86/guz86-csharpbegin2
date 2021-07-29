@@ -6,7 +6,7 @@ namespace multidimensionalArray
     {
         static void Main(string[] args)
         {
-            Lesson();
+            ArrayRandom();
         }
         public static void Lesson()
         {
@@ -30,6 +30,22 @@ namespace multidimensionalArray
                 for (int j = 0; j < myArray.GetLength(1); j++)
                 {
                     Console.Write(myArray[i,j]+" ");
+                }
+                Console.WriteLine();
+            }
+
+        }
+
+        public static void ArrayRandom()
+        {
+            int[,] myArrayRandom = new int[10, 6];
+            Random rand = new Random();
+            for (int i = 0; i < myArrayRandom.GetLength(0); i++)
+            {
+                for (int j = 0; j < myArrayRandom.GetLength(1); j++)
+                {
+                    myArrayRandom[i, j] = rand.Next(1, 9);
+                    Console.Write(myArrayRandom[i,j] + " ");
                 }
                 Console.WriteLine();
             }
