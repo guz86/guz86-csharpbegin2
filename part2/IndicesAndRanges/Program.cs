@@ -11,10 +11,11 @@ namespace IndicesAndRanges
 
 
         }
+        // Индексы и диапазоны
 
         public static void Task1()
         {
-            // Индексы и диапазоны
+            // Индексы
             int[] myArray = { 1, 23, 4, 5, 6, 43, 2, 1, 3 };
 
             // последний элемент массива
@@ -22,7 +23,10 @@ namespace IndicesAndRanges
             Console.WriteLine(myArray[myArray.Length - 1]);
             // синтаксический сахар в версии C#8
             Console.WriteLine(myArray[^1]);
-           
+
+            // 1   второй элемент с конца
+            Console.WriteLine(myArray[^2]);
+
 
 
         }
@@ -31,7 +35,14 @@ namespace IndicesAndRanges
             // диапазоны
             int[] myArray = { 1, 23, 4, 5, 6, 43, 2, 1, 3 };
 
+            // 23, 4, 5
+            int[] myArrayTwo = myArray[1..4];
 
+            // 1, 23, 4, 5
+            int[] myArrayThree = myArray[..4];
+
+            // 43, 2, 1, 3
+            int[] myArrayFour = myArray[5..];
 
 
 
