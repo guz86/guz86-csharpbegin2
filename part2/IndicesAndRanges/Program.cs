@@ -45,6 +45,8 @@ namespace IndicesAndRanges
             int[] myArrayFour = myArray[5..];
 
 
+            // 43, 2, 1
+            int[] myArrayFive = myArray[^4..^1];
 
         }
     }
