@@ -1,0 +1,13 @@
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\multidimensionalArray\bin\Debug\netcoreapp3.1\multidimensionalArray.exe
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\multidimensionalArray\bin\Debug\netcoreapp3.1\multidimensionalArray.deps.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\multidimensionalArray\bin\Debug\netcoreapp3.1\multidimensionalArray.runtimeconfig.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\multidimensionalArray\bin\Debug\netcoreapp3.1\multidimensionalArray.runtimeconfig.dev.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\multidimensionalArray\bin\Debug\netcoreapp3.1\multidimensionalArray.dll
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\multidimensionalArray\bin\Debug\netcoreapp3.1\multidimensionalArray.pdb
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\multidimensionalArray\obj\Debug\netcoreapp3.1\multidimensionalArray.AssemblyInfoInputs.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\multidimensionalArray\obj\Debug\netcoreapp3.1\multidimensionalArray.AssemblyInfo.cs
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\multidimensionalArray\obj\Debug\netcoreapp3.1\multidimensionalArray.csproj.CoreCompileInputs.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\multidimensionalArray\obj\Debug\netcoreapp3.1\multidimensionalArray.dll
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\multidimensionalArray\obj\Debug\netcoreapp3.1\multidimensionalArray.pdb
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\multidimensionalArray\obj\Debug\netcoreapp3.1\multidimensionalArray.genruntimeconfig.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\multidimensionalArray\obj\Debug\netcoreapp3.1\multidimensionalArray.csproj.AssemblyReference.cache
