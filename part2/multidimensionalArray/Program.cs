@@ -6,7 +6,7 @@ namespace multidimensionalArray
     {
         static void Main(string[] args)
         {
-            ArrayRandom();
+            ArrayPractic();
         }
         public static void Lesson()
         {
@@ -51,5 +51,13 @@ namespace multidimensionalArray
             }
 
         }
+
+        public static void ArrayPractic()
+        {
+            // контроль для библиотеки
+
+
+        }
+
     }
 }
