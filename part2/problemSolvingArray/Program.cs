@@ -7,7 +7,7 @@ namespace problemSolvingArray
     {
         static void Main(string[] args)
         {
-            Solution();
+            SumOfNumbers();
         }
 
         public static void Task1()
@@ -164,11 +164,11 @@ namespace problemSolvingArray
 
             int[] nums = { 2, 7, 11, 15 };
             int target = 9;
-            for (int i = 0; i < nums.Length-1; i++)
+            for (int i = 0; i < nums.Length - 1; i++)
             {
-                if (nums[i]+nums[i+1] == target)
+                if (nums[i] + nums[i + 1] == target)
                 {
-                    Console.WriteLine("["+nums[i]+", "+nums[i+1]+ "]");
+                    Console.WriteLine("[" + nums[i] + ", " + nums[i + 1] + "]");
                 }
             }
 
@@ -179,6 +179,22 @@ namespace problemSolvingArray
 
         // задачи на двумерные массивы
 
+        // посчитать сумму чисел в двумерном массиве
+        public static void SumOfNumbers()
+        {
+            int[,] myArray = { {1,2,3 }, {3,2,1 }, {1,1,2 } };
+            int sumElement = 0;
+
+            for (int i = 0; i < myArray.GetLength(0); i++)
+            {
+                for (int j = 0; j < myArray.GetLength(1); j++)
+                {
+                    sumElement += myArray[i, j];
+                }
+            }
+            Console.WriteLine(sumElement);
+
+        }
 
 
     }

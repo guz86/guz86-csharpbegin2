@@ -6,7 +6,7 @@ namespace multidimensionalArray
     {
         static void Main(string[] args)
         {
-            ArrayPractic();
+            ArrayЕxtension();
         }
         public static void Lesson()
         {
@@ -124,6 +124,11 @@ namespace multidimensionalArray
 
 
 
+        }
+
+        public static void ArrayЕxtension()
+        {
+            Console.WriteLine("hi");
         }
 
     }
