@@ -69,10 +69,35 @@ namespace multidimensionalArray
                 switch (Convert.ToInt32(Console.ReadLine()))
                 {
                     case 1:
+                        Console.Write("Введите номер полки: ");
+                        int rows = Convert.ToInt32(Console.ReadLine()) - 1;
+                        Console.Write("Введите номер: ");
+                        int cols = Convert.ToInt32(Console.ReadLine()) - 1;
+                        Console.WriteLine("\n"+myLibrory[rows,cols]);
                         break;
                     case 2:
-                        break;
+                        Console.Write("Введите автора: ");
+                        string author = Console.ReadLine();
+                        bool authorIsFind = false;
+                        for (int i = 0; i < myLibrory.GetLength(0); i++)
+                        {
+                            for (int j = 0; j < myLibrory.GetLength(1); j++)
+                            {
+                                if (author.ToLower() == myLibrory[i,j].ToLower())
+                                {
+                                    Console.WriteLine("Книга автора: "+ myLibrory[i, j] + " находится на полке " +(i+1)+ ", место "+ (j+1));
+                                    authorIsFind = true;
+                                    break;
+                                } 
+                            }
+                        }
+                        if (authorIsFind == false)
+                        {
 
+                            Console.WriteLine("Такого автора нет.");
+                        }
+
+                        break;
                     case 3:
                         Console.WriteLine("\nВесь список авторов: \n");
                         for (int i = 0; i < myLibrory.GetLength(0); i++)
