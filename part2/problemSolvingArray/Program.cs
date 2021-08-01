@@ -194,6 +194,23 @@ namespace problemSolvingArray
             }
             Console.WriteLine(sumElement);
 
+
+            // чудной вариант с ютуба
+
+
+
+            int[,] myArrayTwo = { { 1, 2, 3 }, { 3, 2, 1 }, { 1, 1, 2 } };
+            int sumElementTwo = 0;
+            int colums = myArrayTwo.GetUpperBound(0)+1;
+            int rows = myArrayTwo.Length / colums;
+            for (int i = 0; i < colums; i++)
+            {
+                for (int j = 0; j < rows; j++)
+                {
+                    sumElementTwo += myArrayTwo[i, j];
+                }
+            }
+            Console.WriteLine(sumElementTwo);
         }
 
 
