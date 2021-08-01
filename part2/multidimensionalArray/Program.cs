@@ -56,6 +56,48 @@ namespace multidimensionalArray
         {
             // контроль для библиотеки
 
+            string [,] myLibrory = { { "Достаевский", "Глуховский", "Быков" },
+                                     { "Аллен Кар", "Стивен Кинг", "Брем Стокер" },
+                                     { "Донцова", "Усанов", "Прокопенко" } };
+            bool isOpen = true;
+
+            while (isOpen)
+            {
+                Console.WriteLine("Библиотека\n");
+                Console.WriteLine("1 - Получить книгу по индексу, 2 - Найти книгу по автору, 3 - Вывод книг, 4 - Выход.");
+
+                switch (Convert.ToInt32(Console.ReadLine()))
+                {
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+
+                    case 3:
+                        Console.WriteLine("\nВесь список авторов: \n");
+                        for (int i = 0; i < myLibrory.GetLength(0); i++)
+                        {
+                            for (int j = 0; j < myLibrory.GetLength(1); j++)
+                            {
+                                Console.Write(myLibrory[i, j] + " ");
+                            }
+                            Console.WriteLine();
+                        }
+
+                        break;
+                    case 4:
+                        isOpen = false;
+                        break;
+                    default:
+                        break;
+                }
+                Console.WriteLine("\nНажмите любую клавишу");
+                Console.ReadKey();
+                Console.Clear();
+            }
+
+
+
 
         }
 
