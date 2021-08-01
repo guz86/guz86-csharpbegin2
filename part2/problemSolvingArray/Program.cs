@@ -7,7 +7,7 @@ namespace problemSolvingArray
     {
         static void Main(string[] args)
         {
-            tenTenRandom();
+            TwoOneArray();
         }
 
         public static void Task1()
@@ -217,19 +217,35 @@ namespace problemSolvingArray
 
         public static void tenTenRandom()
         {
-            int [,] myArray = new int[10,10];
+            int[,] myArray = new int[10, 10];
             Random rand = new Random();
             for (int i = 0; i < myArray.GetLength(0); i++)
             {
                 for (int j = 0; j < myArray.GetLength(1); j++)
                 {
-                    myArray[i, j] = rand.Next(1, 9);
-                    Console.Write(myArray[i,j] + " ");
+                    myArray[i, j] = rand.Next(1, 10);
+                    Console.Write(myArray[i, j] + " ");
                 }
                 Console.WriteLine();
             }
 
 
+
+        }
+
+        public static void TwoOneArray()
+        {
+            int[,] myArray = { { 1, 2, 3 }, { 3, 2, 1 }, { 1, 1, 2 } };
+            int[] myArrayTwo = new int[myArray.Length];
+            int k = 0;
+            for (int j = 0; j < myArray.GetLength(0); j++)
+            {
+                for (int i = 0; i < myArray.GetLength(1); i++)
+                {
+                    myArrayTwo[k]= myArray[j, i];
+                    k++;
+                }
+            }
 
         }
 
