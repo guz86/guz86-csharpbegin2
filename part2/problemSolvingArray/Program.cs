@@ -7,7 +7,7 @@ namespace problemSolvingArray
     {
         static void Main(string[] args)
         {
-            SumOfNumbers();
+            tenTenRandom();
         }
 
         public static void Task1()
@@ -182,7 +182,7 @@ namespace problemSolvingArray
         // посчитать сумму чисел в двумерном массиве
         public static void SumOfNumbers()
         {
-            int[,] myArray = { {1,2,3 }, {3,2,1 }, {1,1,2 } };
+            int[,] myArray = { { 1, 2, 3 }, { 3, 2, 1 }, { 1, 1, 2 } };
             int sumElement = 0;
 
             for (int i = 0; i < myArray.GetLength(0); i++)
@@ -201,7 +201,7 @@ namespace problemSolvingArray
 
             int[,] myArrayTwo = { { 1, 2, 3 }, { 3, 2, 1 }, { 1, 1, 2 } };
             int sumElementTwo = 0;
-            int colums = myArrayTwo.GetUpperBound(0)+1;
+            int colums = myArrayTwo.GetUpperBound(0) + 1;
             int rows = myArrayTwo.Length / colums;
             for (int i = 0; i < colums; i++)
             {
@@ -211,6 +211,26 @@ namespace problemSolvingArray
                 }
             }
             Console.WriteLine(sumElementTwo);
+        }
+
+        // заполнить двумерный массив 10 на 10 случайными числами от 1 до 9 и вывести на экран
+
+        public static void tenTenRandom()
+        {
+            int [,] myArray = new int[10,10];
+            Random rand = new Random();
+            for (int i = 0; i < myArray.GetLength(0); i++)
+            {
+                for (int j = 0; j < myArray.GetLength(1); j++)
+                {
+                    myArray[i, j] = rand.Next(1, 9);
+                    Console.Write(myArray[i,j] + " ");
+                }
+                Console.WriteLine();
+            }
+
+
+
         }
 
 
