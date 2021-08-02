@@ -7,7 +7,7 @@ namespace problemSolvingArray
     {
         static void Main(string[] args)
         {
-            TwoOneArray();
+            arrayOddCount();
         }
 
         public static void Task1()
@@ -247,6 +247,27 @@ namespace problemSolvingArray
                 }
             }
 
+        }
+
+        // заполнить массив 10 на 10 случайными числами от 1 до 99 и определить количество четных чисел в массиве
+
+        public static void arrayOddCount()
+        {
+            int[,] myArray = new int[10, 10];
+            Random rand = new Random();
+            int countOdd = 0;
+            for (int i = 0; i < myArray.GetLength(0); i++)
+            {
+                for (int j = 0; j < myArray.GetLength(1); j++)
+                {
+                    myArray[i, j] = rand.Next(1,100);
+                    if (myArray[i,j] % 2 == 0)
+                    {
+                        countOdd++;
+                    }
+                }
+            }
+            Console.WriteLine(countOdd);
         }
 
 
