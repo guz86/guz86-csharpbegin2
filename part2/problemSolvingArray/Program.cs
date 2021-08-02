@@ -7,7 +7,7 @@ namespace problemSolvingArray
     {
         static void Main(string[] args)
         {
-            oneArrayTwoVer2();
+            extensionArray();
         }
 
         public static void Task1()
@@ -283,7 +283,7 @@ namespace problemSolvingArray
                 myArrayTwo[j, k] = myArray[i];
                 k++;
 
-                Console.Write(myArrayTwo[i, n] + " ");
+                Console.Write(myArrayTwo[j, k] + " ");
 
                 if (k % 4 == 0)
                 {
@@ -313,6 +313,24 @@ namespace problemSolvingArray
             }
 
             
+        }
+        
+        // расширить массив +1 элемент и добавить к нему значение 99
+        public static void extensionArray()
+        {
+            // int[] bag = new int[1];
+            int[] bag = { 1,23,4,5};
+            int[] tempBag = new int[bag.Length + 1];
+            for (int i = 0; i < bag.Length; i++)
+            {
+                tempBag[i] = bag[i];
+            }
+            // tempBag[tempBag.Length - 1] = 99; 
+            tempBag[^1] = 99;
+
+            bag = tempBag;
+            Console.WriteLine(bag[^1]);
+            Console.WriteLine(bag.Length);
         }
     }
 }
