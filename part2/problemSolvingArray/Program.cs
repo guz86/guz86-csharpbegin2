@@ -7,7 +7,7 @@ namespace problemSolvingArray
     {
         static void Main(string[] args)
         {
-            oneArrayTwo();
+            oneArrayTwoVer2();
         }
 
         public static void Task1()
@@ -282,6 +282,9 @@ namespace problemSolvingArray
                 Console.Write(myArray[i]+ " ");
                 myArrayTwo[j, k] = myArray[i];
                 k++;
+
+                Console.Write(myArrayTwo[i, n] + " ");
+
                 if (k % 4 == 0)
                 {
                     j++;
@@ -289,15 +292,27 @@ namespace problemSolvingArray
                 }
             }
             Console.WriteLine();
-            // вывод
+
+
+        }
+
+        public static void oneArrayTwoVer2()
+        {
+            int[] myArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 15 };
+            int[,] myArrayTwo = new int[4, 4];
+            int k = 0;
             for (int i = 0; i < myArrayTwo.GetLength(0); i++)
             {
-                for (int n = 0; n < myArrayTwo.GetLength(1); n++)
+                for (int j = 0; j < myArrayTwo.GetLength(1); j++)
                 {
-                    Console.Write(myArrayTwo[i,n]+ " ");
+                    myArrayTwo[i, j] = myArray[k];
+                    k++;
+                    Console.Write(myArrayTwo[i, j] + " ");
                 }
                 Console.WriteLine();
             }
+
+            
         }
     }
 }
