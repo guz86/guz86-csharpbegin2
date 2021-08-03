@@ -1,0 +1,13 @@
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\trampGame\obj\Debug\netcoreapp3.1\trampGame.csproj.AssemblyReference.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\trampGame\obj\Debug\netcoreapp3.1\trampGame.AssemblyInfoInputs.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\trampGame\obj\Debug\netcoreapp3.1\trampGame.AssemblyInfo.cs
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\trampGame\obj\Debug\netcoreapp3.1\trampGame.csproj.CoreCompileInputs.cache
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\trampGame\bin\Debug\netcoreapp3.1\trampGame.exe
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\trampGame\bin\Debug\netcoreapp3.1\trampGame.deps.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\trampGame\bin\Debug\netcoreapp3.1\trampGame.runtimeconfig.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\trampGame\bin\Debug\netcoreapp3.1\trampGame.runtimeconfig.dev.json
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\trampGame\bin\Debug\netcoreapp3.1\trampGame.dll
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\trampGame\bin\Debug\netcoreapp3.1\trampGame.pdb
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\trampGame\obj\Debug\netcoreapp3.1\trampGame.dll
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\trampGame\obj\Debug\netcoreapp3.1\trampGame.pdb
+C:\Users\guz\source\repos\guz86-csharpbegin2\part2\trampGame\obj\Debug\netcoreapp3.1\trampGame.genruntimeconfig.cache
