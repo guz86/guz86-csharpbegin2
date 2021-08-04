@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace trampGame
 {
@@ -184,7 +185,9 @@ namespace trampGame
                     Console.Write(bag[i] + " ");
                 }
 
-                Console.WriteLine("\n\nСобери ВСЕ сокровища и сделай меньше 150 шагов!");
+                Console.WriteLine("\n\nСобери ВСЕ сокровища и сделай меньше 100 шагов!");
+
+                Console.WriteLine("\n\n Управление с помощью стелок Вверх Вниз Влево Вправо!");
 
                 // карта
                 Console.SetCursorPosition(0, 0);
@@ -254,9 +257,15 @@ namespace trampGame
 
                 Console.Clear();
 
-                if (stepCount >=150)
+                if (stepCount >=5)
                 {
+
+                    Console.SetCursorPosition(0, 0);
                     Console.WriteLine("Вы устали! Слишком много шагов!");
+
+                    Console.ReadKey();
+                    Thread.Sleep(3000);
+
                     health = false;
                 }
 
