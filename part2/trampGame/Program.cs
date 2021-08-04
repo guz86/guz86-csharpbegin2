@@ -141,25 +141,88 @@ namespace trampGame
             };
 
             Random rand = new Random();
-            int xUser = rand.Next(1, map.GetLength(1)-1), yUser = rand.Next(1, map.GetLength(0)-1);
+            int xUser, yUser;
+
+            char[] bag = new char[0];
+
+            // map.GetLength(0) 16  высота
+            // map.GetLength(1) 43  ширина
+
+            yUser = rand.Next(1, map.GetLength(1)- 1);
+            xUser = rand.Next(1, map.GetLength(0) - 1);
 
 
-            Console.SetCursorPosition(0, 0);
-            for (int i = 0; i < map.GetLength(0); i++)
+
+
+            while (true)
             {
-                for (int j = 0; j < map.GetLength(1); j++)
+
+                Console.SetCursorPosition(0, map.GetLength(0)+2);
+                Console.Write("Рюкзак: ");
+                for (int i = 0; i < bag.Length; i++)
                 {
-                    Console.Write(map[i,j]);
+                    Console.Write(bag[i]+ " ");
                 }
-                Console.WriteLine();
+
+                // карта
+                Console.SetCursorPosition(0, 0);
+                for (int i = 0; i < map.GetLength(0); i++)
+                {
+                    for (int j = 0; j < map.GetLength(1); j++)
+                    {
+                        Console.Write(map[i, j]);
+                    }
+                    Console.WriteLine();
+                }
+
+                // юзер
+
+                Console.WriteLine(yUser+" "+ xUser);
+
+                Console.SetCursorPosition(yUser, xUser);
+                Console.Write('@');
+
+                ConsoleKeyInfo charKey = Console.ReadKey(); ;
+
+                switch (charKey.Key)        
+                {
+                    case ConsoleKey.UpArrow:
+                        if (map[xUser - 1, yUser] != '.')  
+                        {
+                            xUser--;
+                        }
+                    break;
+                    case ConsoleKey.DownArrow:
+                        if (map[xUser+1, yUser] != '.')
+                        {
+                            xUser++;
+                        }
+                        break;
+                    case ConsoleKey.LeftArrow:
+                        if (map[xUser, yUser-1] != '.')
+                        {
+                            yUser--;
+                        }
+                        break;
+                    case ConsoleKey.RightArrow:
+                        if (map[xUser, yUser+1] != '.')
+                        {
+                            yUser++;
+                        }
+                        break;
+                    default:
+                        break;
+                }
+
+
+
+
+                Console.Clear();
+
+
             }
 
-            Console.SetCursorPosition(xUser, yUser);
-            Console.Write('@');
 
-
-            Console.ReadKey();
-            Console.Clear();
 
 
         }
