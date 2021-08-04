@@ -140,6 +140,11 @@ namespace trampGame
                 { '.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.'},
             };
 
+            Random rand = new Random();
+            int xUser = rand.Next(1, map.GetLength(1)-1), yUser = rand.Next(1, map.GetLength(0)-1);
+
+
+            Console.SetCursorPosition(0, 0);
             for (int i = 0; i < map.GetLength(0); i++)
             {
                 for (int j = 0; j < map.GetLength(1); j++)
@@ -149,6 +154,12 @@ namespace trampGame
                 Console.WriteLine();
             }
 
+            Console.SetCursorPosition(xUser, yUser);
+            Console.Write('@');
+
+
+            Console.ReadKey();
+            Console.Clear();
 
 
         }
