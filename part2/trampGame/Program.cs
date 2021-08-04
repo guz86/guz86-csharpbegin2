@@ -156,7 +156,6 @@ namespace trampGame
 
             bool health = true;
 
-            //  сокровища
 
             // размещаем по карте камни
             Console.SetCursorPosition(0, 0);
@@ -174,6 +173,22 @@ namespace trampGame
                 Console.WriteLine();
             }
 
+            // размещаем препятствия
+            Console.SetCursorPosition(0, 0);
+            for (int i = 1; i < map.GetLength(0) - 1; i++)
+            {
+                for (int j = 1; j < map.GetLength(1) - 1; j++)
+                {
+                    int rock = rand.Next(0, 5);
+                    if (rock > 3)
+                    {
+                        map[i, j] = '.';
+                    }
+
+                }
+                Console.WriteLine();
+            }
+
             while (health)
             {
                 Console.SetCursorPosition(0, map.GetLength(0) + 2);
@@ -185,7 +200,7 @@ namespace trampGame
                     Console.Write(bag[i] + " ");
                 }
 
-                Console.WriteLine("\n\nСобери ВСЕ сокровища и сделай меньше 100 шагов!");
+                Console.WriteLine("\n\nСобери ВСЕ сокровища и сделай меньше 150 шагов!");
 
                 Console.WriteLine("\n\n Управление с помощью стелок Вверх Вниз Влево Вправо!");
 
@@ -257,12 +272,11 @@ namespace trampGame
 
                 Console.Clear();
 
-                if (stepCount >=5)
+                if (stepCount >=150)
                 {
 
-                    Console.SetCursorPosition(0, 0);
+                    Console.SetCursorPosition(10, 5);
                     Console.WriteLine("Вы устали! Слишком много шагов!");
-
                     Console.ReadKey();
                     Thread.Sleep(3000);
 
