@@ -289,12 +289,6 @@ namespace trampGame
                             youWin = true;
                             break;
                         }
-                        else
-                        {
-
-                        }
-  
-
                     }
                 }
                 if (youWin == false)
