@@ -224,7 +224,6 @@ namespace trampGame
 
                 ConsoleKeyInfo charKey = Console.ReadKey();
 
-                stepCount++;
 
                 switch (charKey.Key)
                 {
@@ -232,25 +231,28 @@ namespace trampGame
                         if (map[xUser - 1, yUser] != ':')
                         {
                             xUser--;
-
+                            stepCount++;
                         }
                         break;
                     case ConsoleKey.DownArrow:
                         if (map[xUser + 1, yUser] != ':')
                         {
                             xUser++;
+                            stepCount++;
                         }
                         break;
                     case ConsoleKey.LeftArrow:
                         if (map[xUser, yUser - 1] != ':')
                         {
                             yUser--;
+                            stepCount++;
                         }
                         break;
                     case ConsoleKey.RightArrow:
                         if (map[xUser, yUser + 1] != ':')
                         {
                             yUser++;
+                            stepCount++;
                         }
                         break;
                     default:
@@ -300,7 +302,7 @@ namespace trampGame
                     Console.Clear();
                     Console.SetCursorPosition(10, 5);
                     Console.WriteLine("Поздравляю! Вы собрали все сокровища на карте!");
-                    // рандомный выйгрыш
+                    // рандомный выигрыш
                     int winPrice = rand.Next(0, 6);
                     Console.SetCursorPosition(10, 7);
                     string[] winPrices = { "Вы оставили все сокровища себе до скончания времен!",
