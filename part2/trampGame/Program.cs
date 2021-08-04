@@ -151,10 +151,14 @@ namespace trampGame
             yUser = rand.Next(1, map.GetLength(1) - 1);
             xUser = rand.Next(1, map.GetLength(0) - 1);
 
+            int stepCount = 0;
+
+            bool health = true;
+
             //  сокровища
-            
+
             // размещаем по карте камни
-                Console.SetCursorPosition(0, 0);
+            Console.SetCursorPosition(0, 0);
             for (int i = 1; i < map.GetLength(0) - 1; i++)
             {
                 for (int j = 1; j < map.GetLength(1) - 1; j++)
@@ -169,15 +173,18 @@ namespace trampGame
                 Console.WriteLine();
             }
 
-            while (true)
+            while (health)
             {
-
                 Console.SetCursorPosition(0, map.GetLength(0) + 2);
+                Console.Write("Сделано шагов: "+ stepCount);
+                Console.SetCursorPosition(0, map.GetLength(0) + 3);
                 Console.Write("Рюкзак: ");
                 for (int i = 0; i < bag.Length; i++)
                 {
                     Console.Write(bag[i] + " ");
                 }
+
+                Console.WriteLine("\n\nСобери ВСЕ сокровища и сделай меньше 150 шагов!");
 
                 // карта
                 Console.SetCursorPosition(0, 0);
@@ -197,7 +204,9 @@ namespace trampGame
                 Console.SetCursorPosition(yUser, xUser);
                 Console.Write('@');
 
-                ConsoleKeyInfo charKey = Console.ReadKey(); ;
+                ConsoleKeyInfo charKey = Console.ReadKey();
+
+                stepCount++;
 
                 switch (charKey.Key)
                 {
@@ -205,6 +214,7 @@ namespace trampGame
                         if (map[xUser - 1, yUser] != '.')
                         {
                             xUser--;
+
                         }
                         break;
                     case ConsoleKey.DownArrow:
@@ -242,8 +252,13 @@ namespace trampGame
                     bag = tempBag;
                 }
 
-
                 Console.Clear();
+
+                if (stepCount >=150)
+                {
+                    Console.WriteLine("Вы устали! Слишком много шагов!");
+                    health = false;
+                }
 
 
             }
