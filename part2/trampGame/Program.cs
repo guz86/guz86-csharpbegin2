@@ -270,7 +270,42 @@ namespace trampGame
                     bag = tempBag;
                 }
 
+
+
+
                 Console.Clear();
+
+                // проверка победы
+                bool youWin = false;
+
+                for (int i = 1; i < map.GetLength(0) - 1; i++)
+                {
+                    for (int j = 1; j < map.GetLength(1) - 1; j++)
+                    {
+                        if (map[i, j] == '*' )
+                        {
+                            youWin = true;
+                            break;
+                        }
+                        else
+                        {
+
+                        }
+  
+
+                    }
+                }
+                if (youWin == false)
+                {
+                    Console.Clear();
+                    Console.SetCursorPosition(10, 5);
+                    Console.WriteLine("Поздравляю! Вы собрали все сокровища на карте!");
+                    
+                    Console.ReadKey();
+                    Thread.Sleep(3000);
+
+                    health = false;
+                }
 
                 if (stepCount >=150)
                 {
@@ -283,7 +318,7 @@ namespace trampGame
                     health = false;
                 }
 
-
+                
             }
 
 
