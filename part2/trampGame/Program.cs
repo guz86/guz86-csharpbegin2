@@ -37,8 +37,8 @@ namespace trampGame
                 {' ', '-', '-', '-', '-', '-', '-', '-','-', '-', '-','-', '-', '-', '-', ' ', }
             };
             int userX = 6, userY = 6;
-            
-            char[] bag = new char[0]; 
+
+            char[] bag = new char[0];
 
             while (true)
             {
@@ -47,14 +47,14 @@ namespace trampGame
                 Console.Write("Сумка: ");
                 for (int i = 0; i < bag.Length; i++)
                 {
-                    Console.Write(bag[i]+ " ");
+                    Console.Write(bag[i] + " ");
                 }
                 Console.SetCursorPosition(0, 0);
                 for (int i = 0; i < map.GetLength(0); i++)
                 {
                     for (int j = 0; j < map.GetLength(1); j++)
                     {
-                        Console.Write(map[i,j]);
+                        Console.Write(map[i, j]);
                     }
                     Console.WriteLine();
                 }
@@ -76,7 +76,7 @@ namespace trampGame
                         }
                         break;
                     case ConsoleKey.UpArrow:
-                        if (map[userX - 1,userY] != '-')
+                        if (map[userX - 1, userY] != '-')
                         {
                             userX--;
                         }
@@ -97,7 +97,7 @@ namespace trampGame
                         break;
                 }
 
-                if (map[userX,userY] == '*')
+                if (map[userX, userY] == '*')
                 {
                     map[userX, userY] = ' ';
                     // добавление в сумку
@@ -148,20 +148,35 @@ namespace trampGame
             // map.GetLength(0) 16  высота
             // map.GetLength(1) 43  ширина
 
-            yUser = rand.Next(1, map.GetLength(1)- 1);
+            yUser = rand.Next(1, map.GetLength(1) - 1);
             xUser = rand.Next(1, map.GetLength(0) - 1);
 
-
-
+            //  сокровища
+            
+            // размещаем по карте камни
+                Console.SetCursorPosition(0, 0);
+            for (int i = 1; i < map.GetLength(0) - 1; i++)
+            {
+                for (int j = 1; j < map.GetLength(1) - 1; j++)
+                {
+                    int gem = rand.Next(0, 30);
+                    if (gem > 28)
+                    {
+                        map[i, j] = '*';
+                    }
+                    
+                }
+                Console.WriteLine();
+            }
 
             while (true)
             {
 
-                Console.SetCursorPosition(0, map.GetLength(0)+2);
+                Console.SetCursorPosition(0, map.GetLength(0) + 2);
                 Console.Write("Рюкзак: ");
                 for (int i = 0; i < bag.Length; i++)
                 {
-                    Console.Write(bag[i]+ " ");
+                    Console.Write(bag[i] + " ");
                 }
 
                 // карта
@@ -177,35 +192,35 @@ namespace trampGame
 
                 // юзер
 
-                Console.WriteLine(yUser+" "+ xUser);
+                // Console.WriteLine(yUser + " " + xUser);
 
                 Console.SetCursorPosition(yUser, xUser);
                 Console.Write('@');
 
                 ConsoleKeyInfo charKey = Console.ReadKey(); ;
 
-                switch (charKey.Key)        
+                switch (charKey.Key)
                 {
                     case ConsoleKey.UpArrow:
-                        if (map[xUser - 1, yUser] != '.')  
+                        if (map[xUser - 1, yUser] != '.')
                         {
                             xUser--;
                         }
-                    break;
+                        break;
                     case ConsoleKey.DownArrow:
-                        if (map[xUser+1, yUser] != '.')
+                        if (map[xUser + 1, yUser] != '.')
                         {
                             xUser++;
                         }
                         break;
                     case ConsoleKey.LeftArrow:
-                        if (map[xUser, yUser-1] != '.')
+                        if (map[xUser, yUser - 1] != '.')
                         {
                             yUser--;
                         }
                         break;
                     case ConsoleKey.RightArrow:
-                        if (map[xUser, yUser+1] != '.')
+                        if (map[xUser, yUser + 1] != '.')
                         {
                             yUser++;
                         }
@@ -214,7 +229,18 @@ namespace trampGame
                         break;
                 }
 
-
+                if (map[xUser, yUser] == '*')
+                {
+                    map[xUser, yUser] = ' ';
+                    // добавление в сумку
+                    char[] tempBag = new char[bag.Length + 1];
+                    for (int i = 0; i < bag.Length; i++)
+                    {
+                        tempBag[i] = bag[i];
+                    }
+                    tempBag[tempBag.Length - 1] = '*';
+                    bag = tempBag;
+                }
 
 
                 Console.Clear();
