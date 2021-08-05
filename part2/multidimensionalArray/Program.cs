@@ -6,7 +6,7 @@ namespace multidimensionalArray
     {
         static void Main(string[] args)
         {
-            ArrayЕxtension();
+            GearArray();
         }
         public static void Lesson()
         {
@@ -126,9 +126,12 @@ namespace multidimensionalArray
 
         }
 
-        public static void ArrayЕxtension()
+        public static void GearArray()
         {
-            Console.WriteLine("hi");
+            // зубчатые ступенчатые массивы, массив массивов
+
+
+
         }
 
     }

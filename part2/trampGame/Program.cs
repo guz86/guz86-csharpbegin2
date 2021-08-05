@@ -149,8 +149,8 @@ namespace trampGame
             // map.GetLength(0) 16  высота
             // map.GetLength(1) 43  ширина
 
-            yUser = rand.Next(1, map.GetLength(1) - 1);
             xUser = rand.Next(1, map.GetLength(0) - 1);
+            yUser = rand.Next(1, map.GetLength(1) - 1);
 
             int stepCount = 0;
 
