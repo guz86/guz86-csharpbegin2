@@ -6,7 +6,7 @@ namespace multidimensionalArray
     {
         static void Main(string[] args)
         {
-            GearArray();
+            JaggedArray();
         }
         public static void Lesson()
         {
@@ -126,11 +126,31 @@ namespace multidimensionalArray
 
         }
 
-        public static void GearArray()
+        public static void JaggedArray()
         {
-            // зубчатые ступенчатые массивы, массив массивов
+            // зубчатые ступенчатые массивы, массив массивов  jagged array строки могут содержать разное количество элементов
 
+            int[][] myArray = new int[3][];
+            myArray[0] = new int[5];
+            myArray[1] = new int[2];
+            myArray[2] = new int[1];
 
+            myArray[0][3] = 3;
+
+            // заполнение случайными числами
+
+            Random rand = new Random();
+
+            for (int i = 0; i < myArray.Length; i++)
+            {
+                Console.Write(i + " -> " + "\t");
+                for (int j = 0; j < myArray[i].Length; j++)
+                {
+                    myArray[i][j] = rand.Next(100);
+                    Console.Write(myArray[i][j]+ "\t");
+                }
+                Console.WriteLine();
+            }
 
         }
 
