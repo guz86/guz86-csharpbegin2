@@ -6,17 +6,17 @@ namespace multidimensionalArray
     {
         static void Main(string[] args)
         {
-            JaggedArray();
+            ThreeDimensionalArray();
         }
         public static void Lesson()
         {
             // Многомерные массивы
-                               //0  1  2
+            //0  1  2
             int[,] myArray = { { 2, 3, 4 },
                                { 1, 9, 2 },
                                { 5, 2, 4 } };
 
-            Console.WriteLine(myArray[0,2]);
+            Console.WriteLine(myArray[0, 2]);
             Console.WriteLine(myArray[1, 1]);
             Console.WriteLine(myArray.Length);
             // нулевое измерение - строки
@@ -29,7 +29,7 @@ namespace multidimensionalArray
             {
                 for (int j = 0; j < myArray.GetLength(1); j++)
                 {
-                    Console.Write(myArray[i,j]+" ");
+                    Console.Write(myArray[i, j] + " ");
                 }
                 Console.WriteLine();
             }
@@ -45,7 +45,7 @@ namespace multidimensionalArray
                 for (int j = 0; j < myArrayRandom.GetLength(1); j++)
                 {
                     myArrayRandom[i, j] = rand.Next(1, 9);
-                    Console.Write(myArrayRandom[i,j] + " ");
+                    Console.Write(myArrayRandom[i, j] + " ");
                 }
                 Console.WriteLine();
             }
@@ -56,7 +56,7 @@ namespace multidimensionalArray
         {
             // контроль для библиотеки
 
-            string [,] myLibrory = { { "Достаевский", "Глуховский", "Быков" },
+            string[,] myLibrory = { { "Достаевский", "Глуховский", "Быков" },
                                      { "Аллен Кар", "Стивен Кинг", "Брем Стокер" },
                                      { "Донцова", "Усанов", "Прокопенко" } };
             bool isOpen = true;
@@ -73,7 +73,7 @@ namespace multidimensionalArray
                         int rows = Convert.ToInt32(Console.ReadLine()) - 1;
                         Console.Write("Введите номер: ");
                         int cols = Convert.ToInt32(Console.ReadLine()) - 1;
-                        Console.WriteLine("\n"+myLibrory[rows,cols]);
+                        Console.WriteLine("\n" + myLibrory[rows, cols]);
                         break;
                     case 2:
                         Console.Write("Введите автора: ");
@@ -83,12 +83,12 @@ namespace multidimensionalArray
                         {
                             for (int j = 0; j < myLibrory.GetLength(1); j++)
                             {
-                                if (author.ToLower() == myLibrory[i,j].ToLower())
+                                if (author.ToLower() == myLibrory[i, j].ToLower())
                                 {
-                                    Console.WriteLine("Книга автора: "+ myLibrory[i, j] + " находится на полке " +(i+1)+ ", место "+ (j+1));
+                                    Console.WriteLine("Книга автора: " + myLibrory[i, j] + " находится на полке " + (i + 1) + ", место " + (j + 1));
                                     authorIsFind = true;
                                     break;
-                                } 
+                                }
                             }
                         }
                         if (authorIsFind == false)
@@ -147,10 +147,111 @@ namespace multidimensionalArray
                 for (int j = 0; j < myArray[i].Length; j++)
                 {
                     myArray[i][j] = rand.Next(100);
-                    Console.Write(myArray[i][j]+ "\t");
+                    Console.Write(myArray[i][j] + "\t");
                 }
                 Console.WriteLine();
             }
+
+            // инициализация зубчатого массива
+
+            int[][] myArrayTest =
+            {
+                new int[2] { 1, 2 },
+                new int[3] { 8, 9, 10 }
+            };
+
+
+        }
+
+        // трехмерные массивы
+        public static void ThreeDimensionalArray()
+        {
+            // int[,,] myArray = new int [5, 2, 3];
+            int[,,] myArray =
+            {
+                {
+                    {1,2,3 },
+                    {4,2,1 },
+                    {2,2,2 }
+                },
+                {
+                    {5,6,3 },
+                    {1,2,3 },
+                    {1,6,3 }
+                },
+                {
+                    {1,7,3 },
+                    {1,2,8 },
+                    {8,2,3 }
+                }
+            };
+
+            // заполним случайными числами
+            Random rand = new Random();
+
+            for (int i = 0; i < myArray.GetLength(0); i++)
+            {
+                for (int j = 0; j < myArray.GetLength(1); j++)
+                {
+                    for (int k   = 0; k < myArray.GetLength(2); k++)
+                    {
+                        // Console.Write(myArray[i,j,k]+" ");
+                        myArray[i, j, k] = rand.Next(10);
+                    }
+                }
+            }
+            // вывод 
+            for (int i = 0; i < myArray.GetLength(0); i++)
+            {
+                Console.WriteLine("Page № "+(i+1));
+                for (int j = 0; j < myArray.GetLength(1); j++)
+                {
+                    for (int k = 0; k < myArray.GetLength(2); k++)
+                    {
+                         Console.Write(myArray[i,j,k]+" ");
+                       
+                    }
+                    Console.WriteLine();
+                }
+                Console.WriteLine();
+            }
+
+            // зубчатый трехмерный массив
+
+            int[][][] myArrayTwo = new int [rand.Next(2,5)][][];
+
+            for (int i = 0; i < myArrayTwo.Length; i++)
+            {
+                myArrayTwo[i] = new int[rand.Next(2,6)][];
+
+                for (int j = 0; j < myArrayTwo[i].Length; j++)
+                {
+
+                    myArrayTwo[i][j] = new int[rand.Next(2, 15)];
+
+                    for (int k = 0; k < myArrayTwo[i][j].Length; k++)
+                    {
+                        myArrayTwo[i][j][k] = rand.Next(100);
+                    }
+                }
+            }
+
+            // вывод
+            for (int i = 0; i < myArrayTwo.Length; i++)
+            {
+
+                for (int j = 0; j < myArrayTwo[i].Length; j++)
+                {
+
+                    for (int k = 0; k < myArrayTwo[i][j].Length; k++)
+                    {
+                         Console.Write(myArrayTwo[i][j][k] + " ");
+                    }
+                    Console.WriteLine();
+                }
+                Console.WriteLine();
+            }
+            
 
         }
 
