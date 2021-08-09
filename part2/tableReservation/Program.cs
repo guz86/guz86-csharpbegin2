@@ -10,7 +10,7 @@ namespace tableReservation
             int[] tables = { 2, 4, 6, 5, 2, 3, 4, 2 };
             bool openCafe = true;
 
-
+            
 
             while (openCafe)
             {

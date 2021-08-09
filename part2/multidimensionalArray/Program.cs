@@ -222,11 +222,12 @@ namespace multidimensionalArray
 
             for (int i = 0; i < myArrayTwo.Length; i++)
             {
+                // генерируем количество элементов и выделяем память
                 myArrayTwo[i] = new int[rand.Next(2,6)][];
 
                 for (int j = 0; j < myArrayTwo[i].Length; j++)
                 {
-
+                    // генерируем количество элементов и выделяем память
                     myArrayTwo[i][j] = new int[rand.Next(2, 15)];
 
                     for (int k = 0; k < myArrayTwo[i][j].Length; k++)

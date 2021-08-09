@@ -39,7 +39,8 @@ namespace massiveReverse
 
             Console.Write("\nВывод массива 1 в обратном порядке : ");
 
-            for (int i = array.Length-1; i >= 0; i--)
+            // for (int i = array.Length-1; i >= 0; i--)
+            for (int i = array[^1]; i >= 0; i--)
             {
                 Console.Write(array[i] + " ");
             }
