@@ -48,13 +48,36 @@ namespace massiveDz
             //        case 1:
 
             Console.WriteLine("Сколько элементов будет в массиве:");
-            myArrayKeyboard = new int[Convert.ToInt32(Console.ReadLine())];
+
+            //ввод пользователя и проверка
+            
+            if (int.TryParse(Console.ReadLine(), out int result))
+            {
+            }
+            else
+            {
+                Console.WriteLine("Введите число!");
+            }
+
+            myArrayKeyboard = new int[Convert.ToInt32(result)];
+
+            // myArrayKeyboard = new int[Convert.ToInt32(Console.ReadLine())];
             for (int i = 0; i < myArrayKeyboard.Length; i++)
             {
                 Console.Write($"Введите значение элемента массива {i}: ");
-                myArrayKeyboard[i] = Convert.ToInt32(Console.ReadLine());
-            }
 
+                //ввод пользователя и проверка
+                if (int.TryParse(Console.ReadLine(), out int resultTwo))
+                {
+                }
+                else
+                {
+                    Console.WriteLine("Введите число!");
+                }
+
+                myArrayKeyboard[i] = Convert.ToInt32(resultTwo);
+            }
+            Console.WriteLine();
             Console.Write("Мы получили массив: ");
             for (int i = 0; i < myArrayKeyboard.Length; i++)
             {
